@@ -1,0 +1,710 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapi.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="android," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="TextInputLayout介绍：首先呢，TextInputLayout是什么？
+TextInputLayout是一个能够把EditText包裹在当中的一个布局，当输入文字时，它可以把Hint文字飘到EditText的上方，它里面只能包裹一个布局，且只能是EditText,我们可以对其进行判断，当发生错误时，提示错误信息，在文本的下方。实战：
+1.添加依赖
+dependencies {  com">
+<meta property="og:type" content="article">
+<meta property="og:title" content="TextInputLayout使用以及EditText自己实现监听">
+<meta property="og:url" content="http://www.zhangtengda.com/2016/08/21/TextInputLayout使用以及EditText自己实现监听/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="TextInputLayout介绍：首先呢，TextInputLayout是什么？
+TextInputLayout是一个能够把EditText包裹在当中的一个布局，当输入文字时，它可以把Hint文字飘到EditText的上方，它里面只能包裹一个布局，且只能是EditText,我们可以对其进行判断，当发生错误时，提示错误信息，在文本的下方。实战：
+1.添加依赖
+dependencies {  com">
+<meta property="og:updated_time" content="2016-08-21T15:04:30.575Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="TextInputLayout使用以及EditText自己实现监听">
+<meta name="twitter:description" content="TextInputLayout介绍：首先呢，TextInputLayout是什么？
+TextInputLayout是一个能够把EditText包裹在当中的一个布局，当输入文字时，它可以把Hint文字飘到EditText的上方，它里面只能包裹一个布局，且只能是EditText,我们可以对其进行判断，当发生错误时，提示错误信息，在文本的下方。实战：
+1.添加依赖
+dependencies {  com">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 6318106969341167000,
+      author: '主编大人'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="http://www.zhangtengda.com/2016/08/21/TextInputLayout使用以及EditText自己实现监听/"/>
+
+  <title> TextInputLayout使用以及EditText自己实现监听 | Hexo </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?90b243a6c65242a9176b5b7895579854";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">Hexo</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-commonweal">
+          <a href="/404.html" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
+            
+            公益404
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                TextInputLayout使用以及EditText自己实现监听
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-08-21T23:03:32+08:00" content="2016-08-21">
+              2016-08-21
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/android/" itemprop="url" rel="index">
+                    <span itemprop="name">android</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>TextInputLayout介绍：<br>首先呢，TextInputLayout是什么？</p>
+<p>TextInputLayout是一个能够把EditText包裹在当中的一个布局，当输入文字时，它可以把Hint文字飘到EditText的上方，它里面只能包裹一个布局，且只能是EditText,我们可以对其进行判断，当发生错误时，提示错误信息，在文本的下方。<br>实战：</p>
+<p>1.添加依赖</p>
+<p>dependencies {<br>  compile ‘com.android.support:appcompat-v7:22.2.0’<br>  compile ‘com.android.support:design:22.2.0’<br>}<br>然后呢</p>
+<p>2.xml中声明一个TextInputLayout（里面套一个EditText）</p>
+<p><android.support.design.widget.textinputlayout android:id="@+id/input_layout" android:layout_width="match_parent" android:layout_height="wrap_content"><br>    <edittext android:layout_width="match_parent" android:layout_height="wrap_content"><br></edittext></android.support.design.widget.textinputlayout><br>下一步：</p>
+<p>3.实现监听和一些逻辑判断</p>
+<p>inputLayout.setHint(“请输入姓名”);</p>
+<pre><code>EditText text=inputLayout.getEditText();
+inputLayout.setErrorEnabled(true);
+text.addTextChangedListener(new TextWatcher() {
+    @Override
+    public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+    }
+
+    @Override
+    public void onTextChanged(CharSequence s, int start, int before, int count) {
+        if(s.length()&gt;6){
+            inputLayout.setError(&quot;姓名长度不能大于6&quot;);
+        }else{
+            inputLayout.setError(null);
+        }
+    }
+
+    @Override
+    public void afterTextChanged(Editable s) {
+
+    }
+</code></pre><p>下一步：</p>
+<p>4.注意上面几个方法的作用：</p>
+<p>通过TextInputLayout.getEditText()获取输入框<br>显示错误信息；<br>    textInputLayout.setErrorEnable(true);<br>    textInputLayout.setError(msg);<br>隐藏错误信息：<br>    textInputLayout.setErrorEnable(false);<br>    textInputLayout.setError(null);<br>上面是对TextInputLayout的一些理解。</p>
+<p>只用EditText实现原理是一样的————————————- </p>
+<ul>
+<li><p>1.我们需要去实现TextWatcher这个接口，里面会有三个方法让我们操作</p>
+<p>  1.文本改变前：beforeTextChanged<br>  2.文本改变：onTextChanged<br>  3.文本变化之后 afterTexhChanged<br>2.里面的一个方法设置</p>
+</li>
+</ul>
+<ol>
+<li><p>设置光标到指定位置<br>EditText et = (EditText) findViewById(R.id.etTest);<br>et.setSelection(2);<br>PS：当内容过多时，可通过设置光标位置来让该位置的内容显示在屏幕上。</p>
+</li>
+<li><p>隐藏光标<br>EditText et = (EditText) findViewById(R.id.etTest);<br>//设置光标不显示,但不能设置光标颜色<br>et.setCursorVisible(false);<br>3 android EditText获取光标位置并插入字符删除字符</p>
+</li>
+</ol>
+<p>1.获取光标位置</p>
+<p>int index = editText.getSelectionStart();  </p>
+<p>2.在光标处插入字符<br>int index = editText.getSelectionStart();<br>Editable editable = editText.getText();<br>editable.insert(index, “aaaa”);  </p>
+<p>3.删除光标前字符<br>int index = editText.getSelectionStart();<br>Editable editable = editText.getText();<br>editable.delete(index-1, index);  </p>
+<p>4.<br>android:textCursorDrawable   这个属性是用来控制光标颜色的<br>“@null”   是作用是让光标颜色和text color一样<br>android:textCursorDrawable=”@null”<br>4—顺便介绍一下xml的inputtype的值。</p>
+<p>android:inputType=”none”<br>android:inputType=”text”<br>android:inputType=”textCapCharacters” 字母大写<br>android:inputType=”textCapWords” 首字母大写<br>android:inputType=”textCapSentences” 仅第一个字母大写<br>android:inputType=”textAutoCorrect” 自动完成<br>android:inputType=”textAutoComplete” 自动完成<br>android:inputType=”textMultiLine” 多行输入<br>android:inputType=”textImeMultiLine” 输入法多行（如果支持）<br>android:inputType=”textNoSuggestions” 不提示<br>android:inputType=”textUri” 网址<br>android:inputType=”textEmailAddress” 电子邮件地址<br>android:inputType=”textEmailSubject” 邮件主题<br>android:inputType=”textShortMessage” 短讯<br>android:inputType=”textLongMessage” 长信息<br>android:inputType=”textPersonName” 人名<br>android:inputType=”textPostalAddress” 地址<br>android:inputType=”textPassword” 密码<br>android:inputType=”textVisiblePassword” 可见密码<br>android:inputType=”textWebEditText” 作为网页表单的文本<br>android:inputType=”textFilter” 文本筛选过滤<br>android:inputType=”textPhonetic” 拼音输入<br>//数值类型<br>android:inputType=”number” 数字<br>android:inputType=”numberSigned” 带符号数字格式<br>android:inputType=”numberDecimal” 带小数点的浮点格式<br>android:inputType=”phone” 拨号键盘<br>android:inputType=”datetime” 时间日期<br>android:inputType=”date” 日期键盘<br>android:inputType=”time” 时间键盘<br>5.在代码里的应用</p>
+<pre><code>EditText testEditText = (EditText) findViewById(R.id.edittext);  
+int inputType = InputType.TYPE_CLASS_NUMBER | InputType.TYPE_NUMBER_VARIATION_NORMAL;  
+testEditText.setInputType(inputType);  
+</code></pre><p>那我贴图看一下源码中InputType属性类吧。如下图，</p>
+<p>这里写图片描述</p>
+<p>6.关于EdiitText的其他属性</p>
+<p>android:layout_gravity=”center_vertical” 设置控件显示的位置：默认top，这里居中显示，还有bottom android:hint=”请输入数字！”设置显示在空间上的提示信息</p>
+<p>android:numeric=”integer” 设置只能输入整数，如果是小数则是：decimal<br>android:singleLine=”true” 设置单行输入，一旦设置为true，则文字不会自动换行。<br>android:password=”true” 设置只能输入密码<br>android:textColor = “#ff8c00” 字体颜色<br>android:textStyle=”bold” 字体，bold, italic, bolditalic<br>android:textSize=”20dip” 大小<br>android:capitalize = “characters” 以大写字母写<br>android:textAlign=”center” EditText没有这个属性，但TextView有 android:textColorHighlight=”#cccccc” 被选中文字的底色，默认为蓝色<br>android:textColorHint=”#ffff00” 设置提示信息文字的颜色，默认为灰色<br>android:textScaleX=”1.5” 控制字与字之间的间距<br>android:typeface=”monospace” 字型，normal, sans, serif, monospace<br>android:background=”@null” 空间背景，这里没有，指透明<br>android:layout_weight=”1” 权重，控制控件之间的地位,在控制控件显示的大小时蛮有用的。</p>
+<p> 通过EditText的layout xml文件中的相关属性来实现:</p>
+<ol>
+<li>密码框属性 android:password=”true” 这条可以让EditText显示的内容自动为星号，输入时内容会在1秒内变成*字样。</li>
+<li>纯数字 android:numeric=”true” 这条可以让输入法自动变为数字输入键盘，同时仅允许0-9的数字输入</li>
+<li>仅允许 android:capitalize=”cwj1987” 这样仅允许接受输入cwj1987，一般用于密码验证 下面是一些扩展的风格属性<br>android:editable=”false” 设置EditText不可编辑<br>android:singleLine=”true” 强制输入的内容在单行<br>android:ellipsize=”end” 自动隐藏尾部溢出数据，一般用于文字内容过长一行无法全部显示时<br>7.实现EditText为空时的抖动效果</li>
+</ol>
+<p>如果开启抖动效果的话et.setAnimation(am);这个需要用到父类的requestLayout()方法</p>
+<p>ViewParent parent = et.parent();<br>((ViewGroup)parent).requestLayout();</p>
+<p>Animation am = AnimationUtils.loadAnimation(this,R.anim.shake);<br>公司中一般用et.startAnimation(am);</p>
+<p>在代码中直接实现动画效果（这样最方便）<br>Animation translateAnimation = new TranslateAnimation(0, 10, 0, 0);<br>translateAnimation.setInterpolator(new CycleInterpolator(7));<br>translateAnimation.setDuration(1000);<br>et_01.startAnimation(translateAnimation);</p>
+<p>在xml中实现<br>anim–&gt;</p>
+<translate xmlns:android="http://schemas.android.com/apk/res/android" android:duration="1000" android:fromxdelta="0" android:interpolator="@anim/cycle_7" android:toxdelta="10">
+
+<p>anim–&gt;cycle_7</p>
+<cycleinterpolator xmlns:android="http://schemas.android.com/apk/res/android" android:cycles="7"></cycleinterpolator></translate>
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/android/" rel="tag">#android</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/08/21/android-时间获取以及时间格式化/" rel="next" title="android 时间获取以及时间格式化">
+                <i class="fa fa-chevron-left"></i> android 时间获取以及时间格式化
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/08/21/Android-SQLite数据库版本升级原理解析/" rel="prev" title=" Android SQLite数据库版本升级原理解析">
+                 Android SQLite数据库版本升级原理解析 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="http://tva1.sinaimg.cn/crop.12.26.100.100.180/005CecVzjw8f7cqmzr7ivj305005074b.jpg"
+               alt="Yi Da" />
+          <p class="site-author-name" itemprop="name">Yi Da</p>
+          <p class="site-description motion-element" itemprop="description">不要在大好的年纪选择安逸！！！</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">19</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <p class="post-toc-empty">此文章未包含目录</p>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
+<div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Yi Da</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.1"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+  
+  
+
+  
+
+  
+
+</body>
+</html>

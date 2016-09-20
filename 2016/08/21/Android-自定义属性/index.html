@@ -1,0 +1,656 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapi.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="首先，自定义属性的四个步骤：
+自定义一个CustomView(extends View )类编写values/attrs.xml，在其中编写styleable和item等标签元素在布局文件中CustomView使用自定义的属性（注意namespace）在CustomView的构造方法中通过TypedArray获取问题一：自定义属性在哪里设置？文件声明在Values包的下面创建一个attr.xml的">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Android 自定义属性">
+<meta property="og:url" content="http://www.zhangtengda.com/2016/08/21/Android-自定义属性/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="首先，自定义属性的四个步骤：
+自定义一个CustomView(extends View )类编写values/attrs.xml，在其中编写styleable和item等标签元素在布局文件中CustomView使用自定义的属性（注意namespace）在CustomView的构造方法中通过TypedArray获取问题一：自定义属性在哪里设置？文件声明在Values包的下面创建一个attr.xml的">
+<meta property="og:updated_time" content="2016-08-25T12:23:34.306Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Android 自定义属性">
+<meta name="twitter:description" content="首先，自定义属性的四个步骤：
+自定义一个CustomView(extends View )类编写values/attrs.xml，在其中编写styleable和item等标签元素在布局文件中CustomView使用自定义的属性（注意namespace）在CustomView的构造方法中通过TypedArray获取问题一：自定义属性在哪里设置？文件声明在Values包的下面创建一个attr.xml的">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 6318106969341167000,
+      author: '主编大人'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="http://www.zhangtengda.com/2016/08/21/Android-自定义属性/"/>
+
+  <title> Android 自定义属性 | Hexo </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?90b243a6c65242a9176b5b7895579854";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">Hexo</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-commonweal">
+          <a href="/404.html" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
+            
+            公益404
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                Android 自定义属性
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-08-21T23:09:46+08:00" content="2016-08-21">
+              2016-08-21
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/android/" itemprop="url" rel="index">
+                    <span itemprop="name">android</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>首先，自定义属性的四个步骤：</p>
+<p>自定义一个CustomView(extends View )类<br>编写values/attrs.xml，在其中编写styleable和item等标签元素<br>在布局文件中CustomView使用自定义的属性（注意namespace）<br>在CustomView的构造方法中通过TypedArray获取<br>问题一：自定义属性在哪里设置？文件声明<br>在Values包的下面创建一个attr.xml的文件夹，在里面设置</p>
+<pre><code> &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;resources&gt;
+    &lt;declare-styleable name=&quot;test&quot;&gt;
+        &lt;attr name=&quot;text&quot; format=&quot;string&quot; /&gt;
+        &lt;attr name=&quot;testAttr&quot; format=&quot;integer&quot; /&gt;
+    &lt;/declare-styleable&gt;
+&lt;/resources&gt;
+</code></pre><p>自定义属性：</p>
+<p>public class MyTextView extends View {<br>private static final String TAG = MyTextView.class.getSimpleName();</p>
+<p>   public MyTextView(Context context, AttributeSet attrs) {<br>    super(context, attrs);<br>        TypedArray ta = context.obtainStyledAttributes(attrs, R.styleable.test);<br>    int text_attr = ta.getInteger(R.styleable.test_testAttr,-1);<br>    String text = ta.getString(R.styleable.test_text);</p>
+<pre><code>Log.e(TAG, &quot;text = &quot; + text + &quot; , textAttr = &quot; + text_attr);
+
+ta.recycle();
+</code></pre><p>}<br>在布局文件中使用</p>
+<relativelayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent" android:layout_height="match_parent" xmlns:ztd="http://schemas.android.com/apk/res-auto">
+
+<p><cast.it.zhang.demo01.mytextview android:layout_width="100dp" android:layout_height="200dp" ztd:testattr="520" ztd:text="helloworld"><br>问题：编写的的时候出现了这个异常，这个要慎用，一般不会出现这样的错误，除非是你的逻辑有问题，这样不会报错，但结果不会改变。<br>Caused by: java.lang.UnsupportedOperationException: Can’t convert to integer: type=0x3</cast.it.zhang.demo01.mytextview></p>
+<pre><code>经查发现在引用资源的时候出现了错误
+int textAttr = ta.getInteger(R.styleable.test_text, -1);
+</code></pre><p>解决方法:<br>在执行ta.getInteger()方法的时候出现报错，根据报错信息字面意思是因为获取的资源id无法转换为integer类型才报错的，于是我将getInteger()改为了getResourceId()方法，这回程序就运行正常了。</p>
+<p>AttributeSet与TypedArray</p>
+<p>1。通过AttributeSet可以获得布局文件中定义的所有属性的key和value<br>2.TypedArray其实是用来简化我们的工作的，比如上例，如果布局中的属性的值是引用类型（比如：@dimen/dp100），如果使用AttributeSet去获得最终的像素值，那么需要第一步拿到id，第二步再去解析id。而TypedArray正是帮我们简化了这个过程</p>
+<p>attrs.xml里面的declare-styleable以及item，android会根据其在R.java中生成一些常量方便我们使用(aapt干的)，本质上，我们可以不声明declare-styleable仅仅声明所需的属性即可。<br>我们在View的构造方法中，可以通过AttributeSet去获得自定义属性的值，但是比较麻烦，而TypedArray可以很方便的便于我们去获取。<br>我们在自定义View的时候，可以使用系统已经定义的属性。<br>近期的更新计划：自定义View的一些细节相关的Blog(重点会在交互上)，Android最佳实践相关的文章，framework相关的一些文章，</p>
+<p>那么你看看最后一行使用TypedArray获取的值，是不是瞬间明白了什么。<br>多个类定义attr属性重复的问题:Attribute “xxx” has already been defined</p>
+<p>如果从单独开发app的话，可能不会遇到多个自定义类的attribute 的名字重复的问题。但是如果是团队合作开发的话，可能会碰到这样的问题，A和B自定义的两个类都用了同一个名字来定义属性，这时系统会报出警告，Attribute “xxx” has already been defined. A和B又都不想修改自己的名字，这时就很头痛。</p>
+<p>下面举个例子，在values文件夹下定义一个上面的attrs.xml的文件，eclipse即会报错：Attribute “icon” has already been defined。因为在PreferenceHeader, Preference两个属性集里定义了两个相同的属性。<br>[html] view plain copy</p>
+<p>&lt;? xml version = “1.0” encoding = “utf-8” ?&gt;<br>&lt; resources &gt;<br>     &lt; declare-styleable name= “PreferenceHeader” &gt;<br>        <!-- Identifier value for the header. --><br>        &lt; attr name= “id” format = “integer”/&gt;<br>        &lt; attr name= “icon” format = “integer” /&gt;<br>        <!-- The fragment that is displayed when the user selects this item. --><br>    <br>    &lt; declare-styleable name= “Preference” &gt;<br>        &lt; attr name= “icon” format = “integer” /&gt;<br>        <!-- The key to store the Preference value. --><br>        &lt; attr name= “key” format = “string” /&gt;<br>    <br>&lt;/ resources &gt;<br>解决方案：<br>1.在xml文件里前面先声明属性<br>2.然后在属性集合里引用声明的属性即可。<br>以上面的文件为例来修改，如下：<br>[html] view plain copy</p>
+<p>&lt;? xml version = “1.0” encoding = “utf-8” ?&gt;<br>&lt; resources &gt;<br>     &lt; attr name = “icon” format = “integer” /&gt;<br>     &lt; declare-styleable name= “PreferenceHeader” &gt;<br>        <!-- Identifier value for the header. --><br>        &lt; attr name= “id” format = “integer”/&gt;<br>        &lt; attr name= “icon” /&gt;<br>        <!-- The fragment that is displayed when the user selects this item. --><br><br>&lt; declare-styleable name= “Preference” &gt;<br>    &lt; attr name= “icon”  /&gt;<br>    <!-- The key to store the Preference value. --><br>    &lt; attr name= “key” format = “string” /&gt;<br>  </p>
+</relativelayout>
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/08/21/数据库存储全方案，详解持久化技术/" rel="next" title="数据库存储全方案，详解持久化技术">
+                <i class="fa fa-chevron-left"></i> 数据库存储全方案，详解持久化技术
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/08/21/Zxing生成二维码经典解析/" rel="prev" title=" Zxing生成二维码经典解析">
+                 Zxing生成二维码经典解析 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="http://tva1.sinaimg.cn/crop.12.26.100.100.180/005CecVzjw8f7cqmzr7ivj305005074b.jpg"
+               alt="Yi Da" />
+          <p class="site-author-name" itemprop="name">Yi Da</p>
+          <p class="site-description motion-element" itemprop="description">不要在大好的年纪选择安逸！！！</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">19</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <p class="post-toc-empty">此文章未包含目录</p>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
+<div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Yi Da</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.1"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+  
+  
+
+  
+
+  
+
+</body>
+</html>

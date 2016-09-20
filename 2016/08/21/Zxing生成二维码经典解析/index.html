@@ -1,0 +1,844 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapi.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="1.首先呢，先编译 compile ‘com.google.zxing:core:3.2.1’
+2、实战
+public class QRCode {private static int IMAGE_HALFWIDTH = 50;//宽度值，影响中间图片大小
+/**
+
+生成二维码，默认大小为500500
+
+@return bitmap*/public static Bitmap createQRCo">
+<meta property="og:type" content="article">
+<meta property="og:title" content=" Zxing生成二维码经典解析">
+<meta property="og:url" content="http://www.zhangtengda.com/2016/08/21/Zxing生成二维码经典解析/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="1.首先呢，先编译 compile ‘com.google.zxing:core:3.2.1’
+2、实战
+public class QRCode {private static int IMAGE_HALFWIDTH = 50;//宽度值，影响中间图片大小
+/**
+
+生成二维码，默认大小为500500
+
+@return bitmap*/public static Bitmap createQRCo">
+<meta property="og:updated_time" content="2016-08-25T12:24:23.112Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content=" Zxing生成二维码经典解析">
+<meta name="twitter:description" content="1.首先呢，先编译 compile ‘com.google.zxing:core:3.2.1’
+2、实战
+public class QRCode {private static int IMAGE_HALFWIDTH = 50;//宽度值，影响中间图片大小
+/**
+
+生成二维码，默认大小为500500
+
+@return bitmap*/public static Bitmap createQRCo">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 6318106969341167000,
+      author: '主编大人'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="http://www.zhangtengda.com/2016/08/21/Zxing生成二维码经典解析/"/>
+
+  <title>  Zxing生成二维码经典解析 | Hexo </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?90b243a6c65242a9176b5b7895579854";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">Hexo</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-commonweal">
+          <a href="/404.html" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
+            
+            公益404
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                 Zxing生成二维码经典解析
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-08-21T23:10:53+08:00" content="2016-08-21">
+              2016-08-21
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/android/" itemprop="url" rel="index">
+                    <span itemprop="name">android</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>1.首先呢，先编译 compile ‘com.google.zxing:core:3.2.1’</p>
+<p>2、实战</p>
+<p>public class QRCode {<br>private static int IMAGE_HALFWIDTH = 50;//宽度值，影响中间图片大小</p>
+<p>/**</p>
+<ul>
+<li>生成二维码，默认大小为500<em>500
+</em></li>
+<li>@return bitmap<br>*/<br>public static Bitmap createQRCode() {<br> return createQRCode();<br>}</li>
+</ul>
+<p>/**</p>
+<ul>
+<li>生成二维码，默认大小为500<em>500
+</em></li>
+<li>@param text 需要生成二维码的文字、网址等</li>
+<li>@return bitmap<br>*/<br>public static Bitmap createQRCode(String text) {<br> return createQRCode(text, 500);<br>}</li>
+</ul>
+<p>/**</p>
+<ul>
+<li>生成二维码<br>*</li>
+<li>@param text 需要生成二维码的文字、网址等</li>
+<li>@param size 需要生成二维码的大小（）</li>
+<li><p>@return bitmap<br>*/<br>public static Bitmap createQRCode(String text, int size) {<br> try {</p>
+<pre><code>Hashtable&lt;EncodeHintType, String&gt; hints = new Hashtable&lt;&gt;();
+hints.put(EncodeHintType.CHARACTER_SET, &quot;utf-8&quot;);
+BitMatrix bitMatrix = new QRCodeWriter().encode(text,
+        BarcodeFormat.QR_CODE, size, size, hints);
+int[] pixels = new int[size * size];
+for (int y = 0; y &lt; size; y++) {
+    for (int x = 0; x &lt; size; x++) {
+        if (bitMatrix.get(x, y)) {
+            pixels[y * size + x] = 0xff000000;
+        } else {
+            pixels[y * size + x] = 0xffffffff;
+        }
+
+    }
+}
+Bitmap bitmap = Bitmap.createBitmap(size, size,
+        Bitmap.Config.ARGB_8888);
+bitmap.setPixels(pixels, 0, size, 0, 0, size, size);
+return bitmap;
+</code></pre><p> } catch (WriterException e) {</p>
+<pre><code>e.printStackTrace();
+return null;
+</code></pre><p> }<br>}</p>
+</li>
+</ul>
+<p>/**</p>
+<ul>
+<li>生成带logo的二维码，默认二维码的大小为500，logo为二维码的1/5<br>*</li>
+<li>@param text 需要生成二维码的文字、网址等</li>
+<li>@param mBitmap logo文件</li>
+<li>@return bitmap<br>*/<br>public static Bitmap createQRCodeWithLogo(String text, Bitmap mBitmap) {<br> return createQRCodeWithLogo(text,500,mBitmap);<br>}</li>
+</ul>
+<p>/**</p>
+<ul>
+<li>生成带logo的二维码，logo默认为二维码的1/5<br>*</li>
+<li>@param text 需要生成二维码的文字、网址等</li>
+<li>@param size 需要生成二维码的大小（）</li>
+<li>@param mBitmap logo文件</li>
+<li><p>@return bitmap<br>*/<br>public static Bitmap createQRCodeWithLogo(String text, int size, Bitmap mBitmap) {<br> try {</p>
+<pre><code>IMAGE_HALFWIDTH = size/10;
+Hashtable&lt;EncodeHintType, Object&gt; hints = new Hashtable&lt;&gt;();
+hints.put(EncodeHintType.CHARACTER_SET, &quot;utf-8&quot;);
+/*
+ * 设置容错级别，默认为ErrorCorrectionLevel.L
+ * 因为中间加入logo所以建议你把容错级别调至H,否则可能会出现识别不了
+ */
+hints.put(EncodeHintType.ERROR_CORRECTION, ErrorCorrectionLevel.H);
+BitMatrix bitMatrix = new QRCodeWriter().encode(text,
+        BarcodeFormat.QR_CODE, size, size, hints);
+
+int width = bitMatrix.getWidth();//矩阵高度
+int height = bitMatrix.getHeight();//矩阵宽度
+int halfW = width / 2;
+int halfH = height / 2;
+
+Matrix m = new Matrix();
+float sx = (float) 2 * IMAGE_HALFWIDTH / mBitmap.getWidth();
+float sy = (float) 2 * IMAGE_HALFWIDTH
+        / mBitmap.getHeight();
+m.setScale(sx, sy);
+//设置缩放信息
+//将logo图片按martix设置的信息缩放
+mBitmap = Bitmap.createBitmap(mBitmap, 0, 0,
+        mBitmap.getWidth(), mBitmap.getHeight(), m, false);
+
+int[] pixels = new int[size * size];
+for (int y = 0; y &lt; size; y++) {
+    for (int x = 0; x &lt; size; x++) {
+        if (x &gt; halfW - IMAGE_HALFWIDTH &amp;&amp; x &lt; halfW + IMAGE_HALFWIDTH
+                &amp;&amp; y &gt; halfH - IMAGE_HALFWIDTH
+                &amp;&amp; y &lt; halfH + IMAGE_HALFWIDTH) {
+            //该位置用于存放图片信息
+            //记录图片每个像素信息
+            pixels[y * width + x] = mBitmap.getPixel(x - halfW
+                    + IMAGE_HALFWIDTH, y - halfH + IMAGE_HALFWIDTH);
+        } else {
+            if (bitMatrix.get(x, y)) {
+                pixels[y * size + x] = 0xff000000;
+            } else {
+                pixels[y * size + x] = 0xffffffff;
+            }
+        }
+    }
+}
+Bitmap bitmap = Bitmap.createBitmap(size, size,
+        Bitmap.Config.ARGB_8888);
+bitmap.setPixels(pixels, 0, size, 0, 0, size, size);
+return bitmap;
+</code></pre><p> } catch (WriterException e) {</p>
+<pre><code>e.printStackTrace();
+return null;
+</code></pre><p> }<br>}<br>三、解析</p>
+</li>
+</ul>
+<p>生成二维码，上面可以做的操作生成带文字和网址、带图片的还有二维码的大小，在代码中都有了详细的总结。</p>
+<p>四、对二维码进行放大和缩小的操作</p>
+<p>public class MainActivity extends AppCompatActivity {<br>    Bitmap bp = null;<br>    ImageView imageview;<br>    float scaleWidth;<br>    float scaleHeight;</p>
+<pre><code>int h;
+boolean num = false;
+private Bitmap netfits;
+</code></pre><p>@Override<br>protected void onCreate(Bundle savedInstanceState) {<br>    super.onCreate(savedInstanceState);<br>    setContentView(R.layout.activity_main);</p>
+<pre><code>DisplayMetrics dm = new DisplayMetrics();//创建矩阵
+getWindowManager().getDefaultDisplay().getMetrics(dm);
+
+imageview = (ImageView) findViewById(R.id.imageview);
+bp= BitmapFactory.decodeResource(getResources(),R.drawable.icon);
+
+
+netfits = QRCode.createQRCodeWithLogo(&quot;张&quot;,200,bp);
+
+int width = netfits.getWidth();
+int height = netfits.getHeight();
+int w = dm.widthPixels; //得到屏幕的宽度
+final int h = dm.heightPixels; //得到屏幕的高度
+scaleWidth = ((float) w) / width;
+scaleHeight = ((float) w) / height;
+imageview.setImageBitmap(netfits);
+
+imageview.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View view) {
+        if (num == true) {
+            Matrix matrix = new Matrix();
+            matrix.postScale(scaleWidth, scaleHeight);
+
+            Bitmap newBitmap = Bitmap.createBitmap(netfits, 0, 0, netfits.getWidth(), netfits.getHeight(), matrix, true);
+            imageview.setImageBitmap(newBitmap);
+            num = false;
+        } else {
+            Matrix matrix = new Matrix();
+            matrix.postScale(1.0f, 1.0f);
+            Bitmap newBitmap = Bitmap.createBitmap(netfits, 0, 0, netfits.getWidth(), netfits.getHeight(), matrix, true);
+            imageview.setImageBitmap(newBitmap);
+            num = true;
+        }
+    }
+});
+</code></pre><p>}<br>普通模式下我们可以自己处理：</p>
+<p>@Override<br>public boolean onTouchEvent(MotionEvent event) {</p>
+<pre><code>switch (event.getAction()) {
+
+    case MotionEvent.ACTION_DOWN:  //当屏幕检测到第一个触点按下之后就会触发到这个事件。
+        if (num == true) {
+            Matrix matrix = new Matrix();
+            matrix.postScale(scaleWidth, scaleHeight);
+
+            Bitmap newBitmap = Bitmap.createBitmap(netfits, 0, 0, netfits.getWidth(), netfits.getHeight(), matrix, true);
+            imageview.setImageBitmap(newBitmap);
+            num = false;
+        } else {
+            Matrix matrix = new Matrix();
+            matrix.postScale(1.0f, 1.0f);
+            Bitmap newBitmap = Bitmap.createBitmap(netfits, 0, 0, netfits.getWidth(), netfits.getHeight(), matrix, true);
+            imageview.setImageBitmap(newBitmap);
+            num = true;
+        }
+        break;
+}
+
+
+return super.onTouchEvent(event);
+</code></pre><p>}<br>添加功能：看是否选中，给二维码添加图片</p>
+<p>private void initView() {<br>    editText = (EditText) this.findViewById(R.id.qrcode_et);<br>    button = (Button) this.findViewById(R.id.qrcode_bt);<br>    imageView = (ImageView) this.findViewById(R.id.qrcode_iv);<br>    cb = (CheckBox) this.findViewById(R.id.qrcode_cb);</p>
+<pre><code>button.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View view) {
+        if (cb.isChecked()){
+            Bitmap bitmap = QRCode.createQRCodeWithLogo(editText.getText().toString(), 500,
+                    BitmapFactory.decodeResource(getResources(),R.drawable.logo_me));
+            imageView.setImageBitmap(bitmap);
+        }else{
+            Bitmap bitmap = QRCode.createQRCode(editText.getText().toString(), 500);
+            imageView.setImageBitmap(bitmap);
+        }
+
+    }
+});
+</code></pre><p>}<br>上面是简单的实现对二维码的方法和缩小，如果更好的实现，欢迎交流！！！</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/08/21/Android-自定义属性/" rel="next" title="Android 自定义属性">
+                <i class="fa fa-chevron-left"></i> Android 自定义属性
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/08/21/导入开源项目出现错误/" rel="prev" title="导入开源项目出现错误">
+                导入开源项目出现错误 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="http://tva1.sinaimg.cn/crop.12.26.100.100.180/005CecVzjw8f7cqmzr7ivj305005074b.jpg"
+               alt="Yi Da" />
+          <p class="site-author-name" itemprop="name">Yi Da</p>
+          <p class="site-description motion-element" itemprop="description">不要在大好的年纪选择安逸！！！</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">19</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <p class="post-toc-empty">此文章未包含目录</p>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
+<div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Yi Da</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.1"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+  
+  
+
+  
+
+  
+
+</body>
+</html>

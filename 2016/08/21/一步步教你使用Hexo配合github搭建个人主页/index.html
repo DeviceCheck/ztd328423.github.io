@@ -1,0 +1,658 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapi.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="hexo," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="前言：“工欲善其事，必先利其器”，在搭建个人博客的过程中，我深刻体会到这句话的含义。虽然早就决定了要搭建个人博客，但是我并没有草草动手，而是提前做了大量的调研工作，包括采用哪种博客系统、选择哪种主题、怎么购买并绑定个性域名等等。事实证明，正因为前期的充分准备，搭建过程才能按部就班地进行。下面先介绍为何选择GitHub Pages和Hexo来搭建博客准备你需要准备好以下软件：Node.js环境Git">
+<meta property="og:type" content="article">
+<meta property="og:title" content="一步步教你使用Hexo配合github搭建个人主页">
+<meta property="og:url" content="http://www.zhangtengda.com/2016/08/21/一步步教你使用Hexo配合github搭建个人主页/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="前言：“工欲善其事，必先利其器”，在搭建个人博客的过程中，我深刻体会到这句话的含义。虽然早就决定了要搭建个人博客，但是我并没有草草动手，而是提前做了大量的调研工作，包括采用哪种博客系统、选择哪种主题、怎么购买并绑定个性域名等等。事实证明，正因为前期的充分准备，搭建过程才能按部就班地进行。下面先介绍为何选择GitHub Pages和Hexo来搭建博客准备你需要准备好以下软件：Node.js环境Git">
+<meta property="og:updated_time" content="2016-08-25T12:33:40.092Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="一步步教你使用Hexo配合github搭建个人主页">
+<meta name="twitter:description" content="前言：“工欲善其事，必先利其器”，在搭建个人博客的过程中，我深刻体会到这句话的含义。虽然早就决定了要搭建个人博客，但是我并没有草草动手，而是提前做了大量的调研工作，包括采用哪种博客系统、选择哪种主题、怎么购买并绑定个性域名等等。事实证明，正因为前期的充分准备，搭建过程才能按部就班地进行。下面先介绍为何选择GitHub Pages和Hexo来搭建博客准备你需要准备好以下软件：Node.js环境Git">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 6318106969341167000,
+      author: '主编大人'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="http://www.zhangtengda.com/2016/08/21/一步步教你使用Hexo配合github搭建个人主页/"/>
+
+  <title> 一步步教你使用Hexo配合github搭建个人主页 | Hexo </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?90b243a6c65242a9176b5b7895579854";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">Hexo</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-commonweal">
+          <a href="/404.html" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
+            
+            公益404
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                一步步教你使用Hexo配合github搭建个人主页
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-08-21T22:42:09+08:00" content="2016-08-21">
+              2016-08-21
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/hexo/" itemprop="url" rel="index">
+                    <span itemprop="name">hexo</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>前言：<br>“工欲善其事，必先利其器”，在搭建个人博客的过程中，我深刻体会到这句话的含义。虽然早就决定了要搭建个人博客，但是我并没有草草动手，而是提前做了大量的调研工作，包括采用哪种博客系统、选择哪种主题、怎么购买并绑定个性域名等等。事实证明，正因为前期的充分准备，搭建过程才能按部就班地进行。下面先介绍为何选择GitHub Pages和Hexo来搭建博客<br>准备<br>你需要准备好以下软件：<br>Node.js环境<br>Git<br>Windows<br>配置Node.js环境<br>下载Node.js安装文件：<br>Windows Installer 32-bit<br>Windows Installer 64-bit<br>根据自己的Windows版本选择相应的安装文件，要是不知道，就安装32-bit的吧- -。<br>如图所示：<br>Node.js安装界面<br>保持默认设置即可，一路Next，安装很快就结束了。<br>然后我们检查一下是不是要求的组件都安装好了，同时按下Win和R，打开运行窗口：<br>Windows的运行界面<br>在新打开的窗口中输入cmd，敲击回车，打开命令行界面。（下文将直接用打开命令行来表示以上操作，记住哦~）<br>在打开的命令行界面中，输入<br>node -v<br>npm -v<br>如果结果如下图所示，则说明安装正确，可以进行下一步了，如果不正确，则需要回头检查自己的安装过程。<br>Node.js安装测试<br>安装Hexo<br>上面git node 都已经安装成功了，开始安装Hexo,Hexo的安装方式是使用命令行的形式，直接在桌面或者文件夹任意位置右键，选git bash ,在出现的窗口中输入下面命令。</p>
+<p>1<br>npm install hexo -g<br>-g表示全局安装, npm默认为当前项目安装,npm在新版的node中就包含了，如过想验证之前安装node时候，是否npm安装成功，也是用验证版本号的方式，在dos命令窗口输入 npm -v.<br>等这个命令执行完后，我们在电脑的任意盘符新建一个文件夹，名字随意起，一般命名为Hexo,然后在新建的文件夹中邮件选git bash ，依次输入下面命令，安装Hexo.</p>
+<p>1<br>2<br>3<br>hexo init<br>hexo g<br>hexo s<br>init 初始化hexo到你指定的目录<br>g 自动根据当前目录下文件,生成静态网页<br>server 运行本地服务<br>出现下面一行，说明本地服务运行成功。</p>
+<p>1<br>INFO Hexo is running at <a href="http://0.0.0.0:4000/" target="_blank" rel="external">http://0.0.0.0:4000/</a>. Press Ctrl+C to stop.<br>接着在浏览器输入<a href="http://localhost:4000就可以看到效果。" target="_blank" rel="external">http://localhost:4000就可以看到效果。</a><br>本地服务退出方式为 ctrl + c 组合键。<br>在本地看到的样子应该是如下图。</p>
+<p>使用GitHub Pages建立博客站点<br>注册GitHub</p>
+<p>访问GitHub,注册十分简单，一定要记住注册时使用的邮箱，因为 GitHub 上很多通知都是通过邮箱的。如下图所示：</p>
+<p>注册GitHub<br>申请成功后，在GitHub官网上登录，并验证邮箱即可。</p>
+<p>在GitHub上建立仓库</p>
+<p>与 GitHub 建立好连接之后，就可以方便的使用它提供的 Pages 服务，GitHub Pages 分两种，一种是用你的GitHub用户名建立的username.github.io这样的用户&amp;组织站点，另一种是依附项目的Pages。</p>
+<p>想建立个人博客是用的第一种，形如username.github.io这样的可访问的站点，每个用户名下面只能建立一个。如下图所示：</p>
+<p>建立仓库1</p>
+<p>建立仓库2</p>
+<p>创建本地ssh key</p>
+<p>检验本地是否已存在key<br>桌面右键，选择git bash ，依次输入命令</p>
+<p>1<br>2<br>3<br>cd ~<br>cd .ssh<br>ls<br>存在key的话都会显示id_rsa.pub和id_dsa.pub这两个文件没有key什么都不会显示</p>
+<p>1<br>ssh-keygen -t rsa -C “your_email@mail.com”<br>引号中输入的是你的邮箱，这里会提示输入一个文件名来保存ssh key也可以什么都不输入，使用默认的id_rsa.pub和id_dsa.pub回车之后需要输入两次密码：密码我们如果放心的话直接回车，就是没有密码，这样简单。</p>
+<p>githu关联key</p>
+<p>登录Github-&gt;Settings-&gt;SSH keys-&gt;Add SSH key<br>打开本地id_rsa.pub文件（注意：不是id_rsa文件），复制所有内容<br>将复制的内容粘贴到刚刚那个页面的key对应的文本框里面,title随便<br>最后输入：ssh -T git@github.com 回车输入密码，会提示是否设置成功！</p>
+<p>本地站点配置</p>
+<p>进入到本地创建的Hexo 文件夹中，打开Hexo目录下的_config.xml文件，用文本方式打开，直接拉到最下面找到，修改为如下样式</p>
+<p>1<br>2<br>3<br>4<br>deploy:<br>  type: git<br>  repository: git@github.com:wljdev/wljdev.github.io.git<br>  branch: master<br>测试、提交到仓库</p>
+<p>还是右键选择git bash ,依次输入下面命令</p>
+<p>1<br>2<br>hexo g<br>hexo s –debug<br>g 部署，s –debug 本地调试，现在本地测试没问题就可以提交到git仓库了,本地测试： <a href="http://0.0.0.0:4000/" target="_blank" rel="external">http://0.0.0.0:4000/</a><br>不出意外，本地测试没有问题，下面就要提交到git了,依次输入命令如下</p>
+<p>1<br>2<br>hexo g<br>hexo d<br>在测试之前，一定别忘了执行这个方法：npm install hexo-deployer-git –save</p>
+<p>由于2.6以后就更新了，我们需要手动配置些东西，我们需要输入下面三行命令：<br>npm install hexo-renderer-ejs –save<br>npm install hexo-renderer-stylus –save<br>npm install hexo-renderer-marked –save<br>再次“————”</p>
+<p>hexo g</p>
+<p>hexo d<br>这个时候在浏览器中输入： <a href="http://ztd328423.github.io" target="_blank" rel="external">http://ztd328423.github.io</a> 就可以访问到本地站点了，和本地测试是一样的。</p>
+<p>在github上面输入你的域名，save</p>
+<p>然后测试就可以了！！！</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/hexo/" rel="tag">#hexo</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/08/21/java中保留小数的问题解析/" rel="next" title="java中保留小数的问题解析">
+                <i class="fa fa-chevron-left"></i> java中保留小数的问题解析
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/08/21/String-format-用法/" rel="prev" title="String.format()用法">
+                String.format()用法 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="http://tva1.sinaimg.cn/crop.12.26.100.100.180/005CecVzjw8f7cqmzr7ivj305005074b.jpg"
+               alt="Yi Da" />
+          <p class="site-author-name" itemprop="name">Yi Da</p>
+          <p class="site-description motion-element" itemprop="description">不要在大好的年纪选择安逸！！！</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">19</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <p class="post-toc-empty">此文章未包含目录</p>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
+<div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Yi Da</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.1"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+  
+  
+
+  
+
+  
+
+</body>
+</html>

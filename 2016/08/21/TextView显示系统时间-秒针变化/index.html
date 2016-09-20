@@ -1,0 +1,638 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapi.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="很长时间没有写博客了，发现自己慢慢的便懒了，不想动，一个呢，是天气比较热，昨天还是39.5°呢，二来最近比较忙，今天有点闲暇时间，就把以前忘记的知识都整理出来，以便以后查阅，好了，说正题吧，我们知道，用System.currentTimeMillis()可以获取系统当前的时间，我们可以开启一个线程，然后通过handler发消息，来实时的更新TextView上显示的系统时间。
+　　我们开启一个线程，">
+<meta property="og:type" content="article">
+<meta property="og:title" content=" TextView显示系统时间(秒针变化)">
+<meta property="og:url" content="http://www.zhangtengda.com/2016/08/21/TextView显示系统时间-秒针变化/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="很长时间没有写博客了，发现自己慢慢的便懒了，不想动，一个呢，是天气比较热，昨天还是39.5°呢，二来最近比较忙，今天有点闲暇时间，就把以前忘记的知识都整理出来，以便以后查阅，好了，说正题吧，我们知道，用System.currentTimeMillis()可以获取系统当前的时间，我们可以开启一个线程，然后通过handler发消息，来实时的更新TextView上显示的系统时间。
+　　我们开启一个线程，">
+<meta property="og:updated_time" content="2016-08-25T12:24:03.941Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content=" TextView显示系统时间(秒针变化)">
+<meta name="twitter:description" content="很长时间没有写博客了，发现自己慢慢的便懒了，不想动，一个呢，是天气比较热，昨天还是39.5°呢，二来最近比较忙，今天有点闲暇时间，就把以前忘记的知识都整理出来，以便以后查阅，好了，说正题吧，我们知道，用System.currentTimeMillis()可以获取系统当前的时间，我们可以开启一个线程，然后通过handler发消息，来实时的更新TextView上显示的系统时间。
+　　我们开启一个线程，">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 6318106969341167000,
+      author: '主编大人'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="http://www.zhangtengda.com/2016/08/21/TextView显示系统时间-秒针变化/"/>
+
+  <title>  TextView显示系统时间(秒针变化) | Hexo </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?90b243a6c65242a9176b5b7895579854";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">Hexo</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-commonweal">
+          <a href="/404.html" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
+            
+            公益404
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                 TextView显示系统时间(秒针变化)
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-08-21T22:47:17+08:00" content="2016-08-21">
+              2016-08-21
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/android/" itemprop="url" rel="index">
+                    <span itemprop="name">android</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>很长时间没有写博客了，发现自己慢慢的便懒了，不想动，一个呢，是天气比较热，昨天还是39.5°呢，二来最近比较忙，今天有点闲暇时间，就把以前忘记的知识都整理出来，以便以后查阅，好了，说正题吧，我们知道，用System.currentTimeMillis()可以获取系统当前的时间，我们可以开启一个线程，然后通过handler发消息，来实时的更新TextView上显示的系统时间。</p>
+<p>　　我们开启一个线程，线程每隔一秒发送一次消息，我们在消息中更新TextView上显示的时间就ok了。</p>
+<p>　　首先我们在布局文件中放一个TextView用来显示时间，如下所示：</p>
+<p>　　</p>
+<p>复制代码<br> 1 &lt;?xml version=”1.0” encoding=”utf-8”?&gt;<br> 2 <linearlayout 3="" 4="" 5="" 6="" xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@android:color/white"><br> 7   <textview 8="" 9="" 10="" 11="" 12="" 13="" android:id="@+id/mytime" android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center" android:textcolor="@android:color/black" android:textsize="36sp"><br>14 </textview></linearlayout><br>复制代码<br>　　之后我们写一个线程，线程里面无限循环，每隔一秒发送一个消息,其中由Handler来处理显示的结果：</p>
+<p>　　</p>
+<p>复制代码<br> 1 public class TimeThread extends Thread {<br> 2         @Override<br> 3         public void run () {<br> 4             do {<br> 5                 try {<br> 6                     Thread.sleep(1000);<br> 7                     Message msg = new Message();<br> 8                     msg.what = msgKey1;<br> 9                     mHandler.sendMessage(msg);<br>10                 }<br>11                 catch (InterruptedException e) {<br>12                     e.printStackTrace();<br>13                 }<br>14             } while(true);<br>15         }<br>16     }<br>复制代码<br>　　之后会向Handler中发消息，我们可以通过Handler来更新TextView的显示内容：</p>
+<p>　　</p>
+<p>复制代码<br> 1 private Handler mHandler = new Handler() {<br> 2         @Override<br> 3         public void handleMessage (Message msg) {<br> 4             super.handleMessage(msg);<br> 5             switch (msg.what) {<br> 6                 case msgKey1:<br> 7                     long sysTime = System.currentTimeMillis();<br> 8                     CharSequence sysTimeStr = DateFormat.format(“hh:mm:ss”, sysTime);<br> 9                     mTime.setText(sysTimeStr);<br>10                     break;<br>11<br>12                 default:<br>13                     break;<br>14             }<br>15         }<br>16     };<br>复制代码<br>　　之后我们可以在Activity的onCreate方法中开启这个线程，这时我们可以看到一个数字时钟了：</p>
+<p>　　</p>
+<p>1  public void onCreate(Bundle savedInstanceState) {<br>2         super.onCreate(savedInstanceState);<br>3         setContentView(R.layout.time);<br>4         mTime = (TextView) findViewById(R.id.mytime);<br>5         new TimeThread().start();<br>6     }<br>　　整个Activity的代码：</p>
+<p>复制代码<br> 1 package com.fermax.test;<br> 2<br> 3 import android.app.Activity;<br> 4 import android.os.Bundle;<br> 5 import android.os.Handler;<br> 6 import android.os.Message;<br> 7 import android.text.format.DateFormat;<br> 8 import android.widget.TextView;<br> 9<br>10 public class TestActivity extends Activity {<br>11<br>12     private static final int msgKey1 = 1;<br>13     private TextView mTime;<br>14<br>15     @Override<br>16     public void onCreate(Bundle savedInstanceState) {<br>17         super.onCreate(savedInstanceState);<br>18         setContentView(R.layout.time);<br>19         mTime = (TextView) findViewById(R.id.mytime);<br>20         new TimeThread().start();<br>21     }<br>22<br>23     public class TimeThread extends Thread {<br>24         @Override<br>25         public void run () {<br>26             do {<br>27                 try {<br>28                     Thread.sleep(1000);<br>29                     Message msg = new Message();<br>30                     msg.what = msgKey1;<br>31                     mHandler.sendMessage(msg);<br>32                 }<br>33                 catch (InterruptedException e) {<br>34                     e.printStackTrace();<br>35                 }<br>36             } while(true);<br>37         }<br>38     }<br>39<br>40     private Handler mHandler = new Handler() {<br>41         @Override<br>42         public void handleMessage (Message msg) {<br>43             super.handleMessage(msg);<br>44             switch (msg.what) {<br>45                 case msgKey1:<br>46                     long sysTime = System.currentTimeMillis();<br>47                     CharSequence sysTimeStr = DateFormat.format(“hh:mm:ss”, sysTime);<br>48                     mTime.setText(sysTimeStr);<br>49                     break;<br>50<br>51                 default:<br>52                     break;<br>53             }<br>54         }<br>55     };<br>56 }<br>复制代码<br>运行效果就是当前现实的时间。</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/08/21/String-format-用法/" rel="next" title="String.format()用法">
+                <i class="fa fa-chevron-left"></i> String.format()用法
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/08/21/android-计时器的三种实现（Chronometer、Timer、handler）/" rel="prev" title="android 计时器的三种实现（Chronometer、Timer、handler）">
+                android 计时器的三种实现（Chronometer、Timer、handler） <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="http://tva1.sinaimg.cn/crop.12.26.100.100.180/005CecVzjw8f7cqmzr7ivj305005074b.jpg"
+               alt="Yi Da" />
+          <p class="site-author-name" itemprop="name">Yi Da</p>
+          <p class="site-description motion-element" itemprop="description">不要在大好的年纪选择安逸！！！</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">19</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <p class="post-toc-empty">此文章未包含目录</p>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
+<div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Yi Da</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.1"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+  
+  
+
+  
+
+  
+
+</body>
+</html>

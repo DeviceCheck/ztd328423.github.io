@@ -1,0 +1,891 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapi.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="android," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="1.介绍数据的持久化就是将那些内存中的瞬时数据保存到存储设备中，保证即使在手机或电脑关机的情况下，这些数据仍然不丢失。保存到内存中的数据是处于瞬时状态的，而保存在存储设备中的数据是处于持久状态的，持久化技术则是提供了一种机制可以让数据在瞬时状态和持久化之间进行转换。
+2.Android系统提供了三种方式来简单的实现数据持久化技术：
+文件存储：
+（1）Android最基本的一种存储方式，原封不动的保">
+<meta property="og:type" content="article">
+<meta property="og:title" content="数据库存储全方案，详解持久化技术">
+<meta property="og:url" content="http://www.zhangtengda.com/2016/08/21/数据库存储全方案，详解持久化技术/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="1.介绍数据的持久化就是将那些内存中的瞬时数据保存到存储设备中，保证即使在手机或电脑关机的情况下，这些数据仍然不丢失。保存到内存中的数据是处于瞬时状态的，而保存在存储设备中的数据是处于持久状态的，持久化技术则是提供了一种机制可以让数据在瞬时状态和持久化之间进行转换。
+2.Android系统提供了三种方式来简单的实现数据持久化技术：
+文件存储：
+（1）Android最基本的一种存储方式，原封不动的保">
+<meta property="og:updated_time" content="2016-08-21T15:09:04.727Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="数据库存储全方案，详解持久化技术">
+<meta name="twitter:description" content="1.介绍数据的持久化就是将那些内存中的瞬时数据保存到存储设备中，保证即使在手机或电脑关机的情况下，这些数据仍然不丢失。保存到内存中的数据是处于瞬时状态的，而保存在存储设备中的数据是处于持久状态的，持久化技术则是提供了一种机制可以让数据在瞬时状态和持久化之间进行转换。
+2.Android系统提供了三种方式来简单的实现数据持久化技术：
+文件存储：
+（1）Android最基本的一种存储方式，原封不动的保">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 6318106969341167000,
+      author: '主编大人'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="http://www.zhangtengda.com/2016/08/21/数据库存储全方案，详解持久化技术/"/>
+
+  <title> 数据库存储全方案，详解持久化技术 | Hexo </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?90b243a6c65242a9176b5b7895579854";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">Hexo</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-commonweal">
+          <a href="/404.html" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
+            
+            公益404
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                数据库存储全方案，详解持久化技术
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-08-21T23:08:18+08:00" content="2016-08-21">
+              2016-08-21
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/android/" itemprop="url" rel="index">
+                    <span itemprop="name">android</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>1.介绍<br>数据的持久化就是将那些内存中的瞬时数据保存到存储设备中，保证即使在手机或电脑关机的情况下，这些数据仍然不丢失。保存到内存中的数据是处于瞬时状态的，而保存在存储设备中的数据是处于持久状态的，持久化技术则是提供了一种机制可以让数据在瞬时状态和持久化之间进行转换。</p>
+<p>2.Android系统提供了三种方式来简单的实现数据持久化技术：</p>
+<p>文件存储：</p>
+<p>（1）Android最基本的一种存储方式，原封不动的保存到文件中，比较适合存一些简单的文件数据或二进制数据，如果你想存一些比较复杂的文本数据，就需要定义一套自己的格式规范，这样方便之后将数据从文件中国重新解析出来。</p>
+<p>（2）Context类提供了一个openFileOutput()方法，可以将数据存储到指定的文件中，这个方法接收两个参数，第一个参数是文件名，在文件创建的得时候就是用的的这个名称，注意这个文件名不可以包含路径，因为所有的文件到默认存储到/data/data//files/目录下的。第二个参数是文件的操作模式，主要有两种模式：MODE_PRIVATE和MODE_APPEND。其中MODE_PRIVATE是默认的操纵模式，表示指定同样文件名的时候，所写入的内容会覆盖原文件中的内容。而MODE_APPEND则表示的是追加内容，不存在就创建新文件。其实还有两种操作模式：MODE_WORLD_READABLE和MODE_WORLD_WRITEABLE,这两种模式表示允许对我们的文件进行读写操作，存在安全问题，Android 4.2已被废弃。</p>
+<p>实例代码：》》》</p>
+<p>/**</p>
+<ul>
+<li>下面我们是通过openFileOutput（）方法得到一个FileOutputStream对象，然后再借助它构建出一个 OutputStreamWriter对象，接着在使用OutputStreamWriter构建出一个BufferedWriter对象，这样你就可以通过BufferWriter将文本内容写到文件中。<br>*/<br>public void save(String data) {<br> FileOutputStream fos = null;<br> BufferedWriter bw = null;<br> try {<pre><code>fos = openFileOutput(&quot;data&quot;, Context.MODE_PRIVATE);
+bw = new BufferedWriter(new OutputStreamWriter(fos));
+bw.write(data);
+</code></pre> } catch (IOException e) {<pre><code>e.printStackTrace();
+</code></pre> } finally {<pre><code>try {
+    if(bw != null) {
+        bw.close();
+    }
+} catch (IOException e) {
+    e.printStackTrace();
+}
+</code></pre> }<br>}<br>（3）文件存储路径：/data/data/自己的包名/files/你自己起的文件名：》》》</li>
+</ul>
+<p>这里写图片描述</p>
+<p>（4）Context还提供了一个openFileInput()方法，用于文件读取数据；</p>
+<p>/**</p>
+<pre><code> * 首先通过openFileInput()方法获取到了一个FielInputStream对象，然后借助它构建 一个inputStreamReader对象，接着在使用inputStreamReader构建出一个BufferedReader 对象，进行一行一行的读取
+ * @return
+ */
+public String load() {
+    FileInputStream fis = null;
+    BufferedReader br = null;
+    StringBuilder sb = new StringBuilder();
+    try {
+        fis = openFileInput(&quot;data&quot;);
+        br = new BufferedReader(new InputStreamReader(fis));
+        String line = &quot;&quot;;
+        while((line = br.readLine()) != null) {
+            sb.append(line);
+        }
+    } catch (IOException e) {
+        e.printStackTrace();
+    } finally {
+        if(br != null) {
+            try {
+                br.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+    return sb.toString();
+}
+</code></pre><p>SharedPreferences存储：</p>
+<p>-<br>（1）SharedPreferences是使用键值对（这个就不多说了）的方式来存储数据的。比使用文件存储更加方便。</p>
+<p>（2）Context类中的getSharedPreferences()方法，第一个参数指定名称，不存在就创建一个，存放位置是存放在/data/data//shared_prefs/目录下的。第二个参数：用于指定操作模式，主要有两种模式可选，<br>MODE_PRIVATE和MODE_MULTI_PROCESS。MODE_PRIVATE仍然是操作的模式，和直接传入0效果相同，表示只有当前的应用程序才可以对这个SharedPreferences文件进行读写，MODE_MULTI_PROCESS用于多个进程中对同一SharedPreferences进行读写，类似的，MODE_WORLD_READABLE和MODE_WORLD_WRITEABLE,这两种模式表示允许对我们的文件进行读写操作，存在安全问题，Android 4.2已被废弃。</p>
+<p>（3）Activity类中的getPreferences()方法，只接收一个操作模式参数，使用这个方法会自动把当前活动的类名作为<br>SharedPreferences的文件名。</p>
+<p>（4）PreferenceManager类中的getDefaultSharedPreferences()方法，这是一个静态方法。它接收一个context参数，并使用当前应用程序的包名作为前缀来命名SharedPreferences文件。</p>
+<p>案例：</p>
+<p>保存数据的第一种方式：</p>
+<p>private SharedPreferences.Editor sp = getSharedPreferences(“data”,MODE_PRIVATE).edit();<br>                sp.putString(“name”,”tom”);<br>                sp.putInt(“age”,28);<br>                sp.putBoolean(“married”,false);<br>                sp.commit();<br>或者</p>
+<p>SharedPreferences sharedPreferences = context.getSharedPreferences(“userinfo.txt”, Context.MODE_PRIVATE);<br>                //2.使用SharedPreference对象获取一个Editor对象<br>                Editor editor = sharedPreferences.edit();<br>                //3.往Editor对象中put键值对<br>                editor.putString(“username”, username);<br>                editor.putString(“password”, password);<br>                //4.提交Editor对象<br>                editor.commit();<br>恢复数据的案例：</p>
+<p>SharedPreferences spre = getSharedPreferences(“data”,MODE_PRIVATE);<br>                boolean married = spre.getBoolean(“married”, false);<br>                int age = spre.getInt(“age”, 0);<br>                String name = spre.getString(“name”, “”);<br>                Log.d(TAG,”name=”+name+” ,age=”+age+” ,married=”+married);<br>保存密码的案例：</p>
+<p> //这里是登录记住密码的操作</p>
+<pre><code>final SharedPreferences spf = PreferenceManager.getDefaultSharedPreferences(this);
+final EditText uersname = (EditText) findViewById(R.id.et_username);
+final EditText password = (EditText) findViewById(R.id.et_password);
+final CheckBox cb_pass = (CheckBox) findViewById(R.id.remeber_pass);
+final boolean isRemember = spf.getBoolean(&quot;remember_password&quot;,false);
+
+if(isRemember) {
+    //记住密码，设置为true
+    uersname.setText(spf.getString(&quot;username&quot;,&quot;&quot;));
+    password.setText(spf.getString(&quot;password&quot;,&quot;&quot;));
+    cb_pass.setChecked(true);
+}
+
+Button login = (Button) findViewById(R.id.login);
+login.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View view) {
+        String user = uersname.getText().toString();
+        String pass = password.getText().toString();
+        if(user.equals(&quot;admin&quot;) &amp;&amp; pass.equals(&quot;123456&quot;)) {
+           editor = spf.edit();
+            if(cb_pass.isChecked()) {
+                editor.putString(&quot;username&quot;,user);
+                editor.putString(&quot;password&quot;,pass);
+                editor.putBoolean(&quot;remember_password&quot;,true);
+            } else {
+                editor.clear();
+            }
+
+            editor.commit();
+            Toast.makeText(MainActivity.this,&quot;login success&quot;,Toast.LENGTH_SHORT).show();
+        } else {
+            Toast.makeText(MainActivity.this,&quot;login fail&quot;,Toast.LENGTH_SHORT).show();
+        }
+
+    }
+});
+</code></pre><p>下面的图像是getDefaultSharedPreferences方法已包名为文件名：这里写图片描述</p>
+<p>这里要注意点 是当我们记住密码的时候用editor直接提交就可以了，在没有记住密码的时候要把简单的调用一下editor.clear()就可以了。</p>
+<p>数据库存储。Sqlite<br>(1)Sqlite是一款轻量级的关系型数据库，小型的嵌入式数据库，只能对数据库进行操作。适合在移动设备上使用，sqlite不仅支持标准的sql语法，还遵循了数据的ACID事务，比一般的数据库简单的多。当需要存储大量复杂的关系型数据的时候，上面两种方式很难应付，这时候我们就用sqlite数据库来存储数据。</p>
+<p>(2)创建数据库，Android专门提供了SQliteOpenHelper帮助类，借助这个类可以非常简单的对数据库进行创建和升级，这个类是一个抽象类，里面有两个抽象方法，分别是onCreate()和onUpgrade(),然后分别在这两个方法中实现创建、升级数据库的逻辑。</p>
+<p>(3)SQliteOpenHelper中还有两个非常重要的实例方法,getReadableDatabase()和getWritableDatabase(),这两个方法都可以创建和打开一个现有的数据库，并返回一个可对数据库进行读写操作的对象，不同的是，当数据库不可写入的时候（如磁盘空间已满）getReadableDatabase()方法返回的对象将以只读的方式打开数据库，而getWritableDatabase()方法则将抛出异常。</p>
+<p>(4)SQliteOpenHelper中有两个构造方法可重写，一般使用参数少一点的即可，构造方法中接收四个参数，第一个参数是Context,第二个参数是数据库名，第三个参数允许我们在查询数据的时候返回一个自定义的Cursor,一般都是传入null,第四个参数表示当前数据库的版本号，可用于对数据库进行升级的操作。构建出SQliteOpenHelper实例之后，再调用它的getReadableDatabase()或getWritableDatabase()方法就能够创建数据库了，数据库文件的存放位置/data/data//database/目录下，重写的onCreate方法也会执行。</p>
+<pre><code>数据类型：
+integer表示整型
+real表示浮点型
+text表示文本类型
+blob表示二进制类型
+
+命令行查看sqlite数据库：
+启动模拟器
+命令行cd 到android-sdk-windows\platform-tools目录
+adb shell    //进入模拟器
+cd /data/data/yourpackagename/    //进入到软件安装目录
+cd databases  //进入到数据库目录
+ls   //查看现有的数据库,如果创建过应该有个XXXX.db
+sqlite3 XXXX.db   //用sqlite3工具打开数据库,如果不行的话，直接sqlite3 xxxx
+//下面是sqlite3命令
+sqlite&gt; .tables //查看数据库里面的表 本例应该能看到表YYYY
+sqlite&gt; .schema YYYY   //查看表结构
+sqlite&gt; select * from YYYY;  //查询表
+</code></pre><p>(5)像上面所说的数据库升级的方法是非常粗暴的，我们只是简单的在onUpgrade方法中删除了所有的表，然后重新强制执行了一遍onCreate方法，如果产品上线这样做是不可以的，如果用户在更新版本的时候发现以前的数据全部丢失了，那么这个客户就丢失了。</p>
+<p>(6)数据库升级的时候是不能丢失数据的，就是在第一个版本安装的时候，就要把所有的表以及升级之后的表都要建好，第二个版本升级第三个版本也要添加表，保证用户无论怎么升级都是最新的表就对了。</p>
+<p>重点：另外，我们也可以存储在SD卡当中，不过以上三种保存数据会相对来说更简单一些，相比SD卡会更加安全。</p>
+<p>案例：</p>
+<p>  /**</p>
+<pre><code> * 添加数据
+ */
+bt_add = (Button) findViewById(R.id.add_data);
+bt_add.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View view) {
+        SQLiteDatabase db = helper.getWritableDatabase();
+        ContentValues values = new ContentValues();
+        //添加第一组数据
+        values.put(&quot;name&quot;,&quot;zhangsan&quot;);
+        values.put(&quot;auther&quot;,&quot;Ban brown1&quot;);
+        values.put(&quot;pages&quot;,145);
+        values.put(&quot;price&quot;,13.45);
+        db.insert(&quot;Book&quot;,null,values);//插入第一天数据
+        values.clear();
+
+        //添加第二组数据
+        values.put(&quot;name&quot;,&quot;lisi&quot;);
+        values.put(&quot;auther&quot;,&quot;Ban brown2&quot;);
+        values.put(&quot;pages&quot;,111);
+        values.put(&quot;price&quot;,3.89);
+        db.insert(&quot;Book&quot;,null,values);//插入第二条数据
+    }
+});
+</code></pre><p>删除：</p>
+<p>/**</p>
+<pre><code> * 删除数据
+ */
+Button bt_delete = (Button) findViewById(R.id.delete_data);
+bt_delete.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View view) {
+        SQLiteDatabase db = helper.getWritableDatabase();
+        db.delete(&quot;Book&quot;,&quot;pages &gt; ?&quot;,new String[] {&quot;140&quot;});
+    }
+});
+</code></pre><p>query获取数据方法参数：<br>这里写图片描述</p>
+<p>获取数据：</p>
+<p> /**</p>
+<pre><code> * 获取数据
+ *
+ */
+Button bt_query = (Button) findViewById(R.id.query_data);
+bt_query.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View view) {
+        SQLiteDatabase db = helper.getReadableDatabase();
+        //查询Book表中所有的数据
+        Cursor cursor = db.query(&quot;Book&quot;,null,null,null,null,null,null);
+
+        /**
+         * 这里先进行判断是否是在第一行，如果是，直接获取数据，然后再判断是否有
+         * 下一行，进行while循环的判断，去遍历查询每一行数据，cursor.getColumnIndex
+         * 方法会获取到某一列在表中对应的位置索引。
+         */
+        if(cursor.moveToFirst()) {
+            do {
+                String name = cursor.getString(cursor.getColumnIndex(&quot;name&quot;));
+                String auther = cursor.getString(cursor.getColumnIndex(&quot;auther&quot;));
+                int pages = cursor.getInt(cursor.getColumnIndex(&quot;pages&quot;));
+                double price = cursor.getInt(cursor.getColumnIndex(&quot;price&quot;));
+
+                Log.d(TAG,&quot;name = &quot;+name);
+                Log.d(TAG,&quot;auther = &quot;+auther);
+                Log.d(TAG,&quot;pages = &quot;+pages);
+                Log.d(TAG,&quot;price = &quot;+price);
+            } while (cursor.moveToNext());
+        }
+        cursor.close();
+    }
+});
+</code></pre><p>修改：</p>
+<p>   /**</p>
+<pre><code> * 更改数据
+ */
+Button bt_update = (Button) findViewById(R.id.update_data);
+bt_update.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View view) {
+        SQLiteDatabase db = helper.getWritableDatabase();
+        ContentValues values = new ContentValues();
+        values.put(&quot;price&quot;,888);
+        db.update(&quot;Book&quot;,values,&quot;name=?&quot;,new String[] {&quot;lisi&quot;});
+    }
+});
+</code></pre><p>开启事务，进行数据的替换操作：</p>
+<p> /**</p>
+<pre><code> * 开启事务，进行数据的替换操作
+ */
+Button bt_replace = (Button) findViewById(R.id.replace_data);
+bt_replace.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View view) {
+        SQLiteDatabase db = helper.getWritableDatabase();
+        db.beginTransaction();//开启事务
+
+        try {
+            db.delete(&quot;Book&quot;,null,null);
+
+            /**
+             * 如果在这里抛出一个异常，出现问题，有了事务，执行失败，数据就不会被替换
+             * 如果去掉，事务执行成功就会被替换。
+             */
+            if(true) {
+                //在这里手动抛出一个异常，让事务失败
+</code></pre><p>//                         throw new NullPointerException();<br>                }<br>                ContentValues values = new ContentValues();<br>                values.put(“name”,”wangwu”);<br>                values.put(“auther”,”Ban brown3”);<br>                values.put(“pages”,140);<br>                values.put(“price”,13);<br>                db.insert(“Book”,null,values);<br>                db.setTransactionSuccessful();//执行事务成功<br>            } catch (Exception e) {<br>                e.printStackTrace();<br>            } finally {<br>                db.endTransaction();//事务结束<br>            }<br>        }<br>    });<br>得到数据库的帮助类以及创建表的操作：</p>
+<p>private static final String CREATE_BOOK = “create table Book (“</p>
+<pre><code>+ &quot;id integer, &quot;
++ &quot;auther text, &quot;
++ &quot;price real, &quot;
++ &quot;pages integer, &quot;
++ &quot;name text, &quot;
++ &quot;primary key(id,auther)&quot;
++ &quot;)&quot;;
+</code></pre><p>private static final String CREATE_CATRGORY = “create table Category (“</p>
+<pre><code>+ &quot;_id integer primary key autoincrement, &quot;
++ &quot;category_name text, &quot;
++ &quot;category_code integer)&quot;;
+</code></pre><p>/**</p>
+<ul>
+<li>得到创建数据库的帮助类</li>
+<li>@param context</li>
+<li>@return<br>*/<br>public static synchronized DatabaseHelper getInstance(Context context) {<br> if (instance == null) {<pre><code>instance = new DatabaseHelper(context);
+</code></pre> }<br> return instance;<br>}<br>下面是数据库直接对数据的操作：<br>这里写图片描述</li>
+</ul>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/android/" rel="tag">#android</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/08/21/Android-SQLite数据库版本升级原理解析/" rel="next" title=" Android SQLite数据库版本升级原理解析">
+                <i class="fa fa-chevron-left"></i>  Android SQLite数据库版本升级原理解析
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/08/21/Android-自定义属性/" rel="prev" title="Android 自定义属性">
+                Android 自定义属性 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="http://tva1.sinaimg.cn/crop.12.26.100.100.180/005CecVzjw8f7cqmzr7ivj305005074b.jpg"
+               alt="Yi Da" />
+          <p class="site-author-name" itemprop="name">Yi Da</p>
+          <p class="site-description motion-element" itemprop="description">不要在大好的年纪选择安逸！！！</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">19</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <p class="post-toc-empty">此文章未包含目录</p>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
+<div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Yi Da</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.1"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+  
+  
+
+  
+
+  
+
+</body>
+</html>
