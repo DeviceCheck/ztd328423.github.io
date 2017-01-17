@@ -1,6 +1,6 @@
 # ztd328423.github.io
 个人博客
-### 第三方库
+### 应用架构
 | 类库  | 应用架构|
 |-------|---------|
 |应用架构采用 [clean 架构](http://fernandocejas.com/2014/09/03/architecting-android-the-clean-way/)|官方介绍|
