@@ -1,5 +1,8 @@
 # ztd328423.github.io
 个人博客
+### 第三方库
+| 类库  | 应用架构|
+|应用架构采用 [clean 架构]|(http://fernandocejas.com/2014/09/03/architecting-android-the-clean-way/)，并参考 Google 提供的 Android 架构指导里的 [MVP+Clean](https://github.com/googlesamples/android-architecture/tree/todo-mvp-clean) 结构实现。|
 
 ### 第三方库
 | 类库  | 类库说明|
