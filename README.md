@@ -3,7 +3,8 @@
 ### 第三方库
 | 类库  | 应用架构|
 |-------|---------|
-|应用架构采用 [clean 架构](http://fernandocejas.com/2014/09/03/architecting-android-the-clean-way/)|并参考 Google 提供的 Android 架构指导里的 [MVP+Clean]|
+|应用架构采用 [clean 架构](http://fernandocejas.com/2014/09/03/architecting-android-the-clean-way/)|官方介绍|
+|Google 提供的 Android 架构 [MVP+Clean](https://github.com/googlesamples/android-architecture/tree/todo-mvp-clean)|github|
 
 ### 第三方库
 | 类库  | 类库说明|
