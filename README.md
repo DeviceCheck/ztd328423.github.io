@@ -1,5 +1,5 @@
-# ztd328423.github.io
-个人博客
+#[个人博客](http://ztd328423.github.io)
+
 ### 应用架构
 | 类库  | 应用架构|
 |-------|---------|
@@ -15,3 +15,4 @@
 |[compile 'com.android.support:design:24.2.1'](https://design.google.com/)|Google 设计库|
 |[compile 'com.google.zxing:core:3.3.1'](https://github.com/zxing/zxing)|二维码|
 |[compile 'org.greenrobot:eventbus:3.0.0'](https://github.com/greenrobot/EventBus)|EventBus|
+|[compile 'com.alibaba:fastjson:1.2.21'](https://github.com/alibaba/fastjson)|fastJson解析|
