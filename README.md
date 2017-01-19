@@ -19,4 +19,5 @@
 
 ###Components
 | 类库 |  类库说明  |
+|-------|------|
 |[compile 'com.roughike:bottom-bar:2.1.1'](https://github.com/roughike/BottomBar)|底部导航栏|
