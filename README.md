@@ -16,3 +16,7 @@
 |[compile 'com.google.zxing:core:3.3.1'](https://github.com/zxing/zxing)|二维码|
 |[compile 'org.greenrobot:eventbus:3.0.0'](https://github.com/greenrobot/EventBus)|EventBus|
 |[compile 'com.alibaba:fastjson:1.2.21'](https://github.com/alibaba/fastjson)|fastJson解析|
+
+###Components
+| 类库 |  类库说明  |
+|[compile 'com.roughike:bottom-bar:2.1.1'](https://github.com/roughike/BottomBar)|底部导航栏|
