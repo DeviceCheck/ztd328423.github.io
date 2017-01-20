@@ -21,6 +21,9 @@
 |[compile 'com.alibaba:fastjson:1.2.21'](https://github.com/alibaba/fastjson)|[fastJson解析](http://blog.csdn.net/zadarrien_china/article/details/54630790)|
 |[compile 'com.google.dagger:dagger:2.x'](https://github.com/google/dagger)|Dragger2依赖注入|
 |[Android-PullToRefresh-master -> library](https://github.com/chrisbanes/Android-PullToRefresh)|PullToRefresh下拉刷新|
+|[compile 'com.orhanobut:logger:1.15'](https://github.com/orhanobut/logger)|开源日志库Logger|
+|[compile 'com.squareup.okhttp3:okhttp:3.4.2'](http://square.github.io/okhttp/)|Okhttp网络请求|
+|[compile 'com.squareup.okhttp3:logging-interceptor:3.5.0'](https://github.com/square/okhttp/tree/master/okhttp-logging-interceptor)|okhttp网络日志拦截器|
 |--图片加载框架--|
 |[compile 'com.github.bumptech.glide:glide:3.7.0'](https://github.com/bumptech/glide)|Glide图片加载，适用于少量图片加载|
 |[compile 'com.facebook.fresco:fresco:1.0.1'](https://github.com/facebook/fresco)|FaceBook出品，适用于大量图片加载|
