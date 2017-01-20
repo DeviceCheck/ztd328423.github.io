@@ -20,6 +20,7 @@
 |[compile 'org.greenrobot:eventbus:3.0.0'](https://github.com/greenrobot/EventBus)|EventBus|
 |[compile 'com.alibaba:fastjson:1.2.21'](https://github.com/alibaba/fastjson)|[fastJson解析](http://blog.csdn.net/zadarrien_china/article/details/54630790)|
 |[Android-PullToRefresh-master -> library](https://github.com/chrisbanes/Android-PullToRefresh)|PullToRefresh下拉刷新|
+|[ compile 'com.github.bumptech.glide:glide:3.7.0'](https://github.com/bumptech/glide)|Glide图片加载|
 
 ###Components
 | 类库 |  类库说明  |
@@ -31,6 +32,5 @@
 | 文章  | 说明  |
 |-------|-------|
 |[Android知识梳理](https://gold.xitu.io/post/587dbaf9570c3522010e400e)|android基本知识|
-
-
+|[2016 Top 10 Android Library](https://gold.xitu.io/post/587d83d4570c3522010c71b8)|优秀的安卓库|
 </details>
