@@ -25,7 +25,7 @@
 |[compile 'com.facebook.fresco:fresco:1.0.1'](https://github.com/facebook/fresco)|FaceBook出品，适用于大量图片加载|
 |--数据库--|
 |[Android sqlite](https://developer.android.com/training/basics/data-storage/databases.html?hl=zh-cn)|sqlite数据库|
-|[Realm](https://realm.io/)|移动端的新型轻量数据库(ORM框架)|
+|[classpath "io.realm:realm-gradle-plugin:2.3.0"](https://realm.io/)|Relam移动端的新型轻量数据库(ORM框架)|
 
 ###Components
 | 类库 |  类库说明  |
