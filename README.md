@@ -19,6 +19,7 @@
 |[compile 'com.google.zxing:core:3.3.1'](https://github.com/zxing/zxing)|二维码|
 |[compile 'org.greenrobot:eventbus:3.0.0'](https://github.com/greenrobot/EventBus)|EventBus|
 |[compile 'com.alibaba:fastjson:1.2.21'](https://github.com/alibaba/fastjson)|[fastJson解析](http://blog.csdn.net/zadarrien_china/article/details/54630790)|
+|[compile 'com.google.dagger:dagger:2.x'](https://github.com/google/dagger)|Dragger2依赖注入|
 |[Android-PullToRefresh-master -> library](https://github.com/chrisbanes/Android-PullToRefresh)|PullToRefresh下拉刷新|
 |--图片加载框架--|
 |[compile 'com.github.bumptech.glide:glide:3.7.0'](https://github.com/bumptech/glide)|Glide图片加载，适用于少量图片加载|
@@ -31,7 +32,7 @@
 | 类库 |  类库说明  |
 |-------|------|
 |[compile 'com.roughike:bottom-bar:2.1.1'](https://github.com/roughike/BottomBar)|底部导航栏|
-
+|[awesome-android-ui](https://github.com/wasabeef/awesome-android-ui)|UI效果实现|
 
 ###博客文章
 | 文章  | 说明  |
