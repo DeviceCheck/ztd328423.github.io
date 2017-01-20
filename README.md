@@ -20,8 +20,9 @@
 |[compile 'org.greenrobot:eventbus:3.0.0'](https://github.com/greenrobot/EventBus)|EventBus|
 |[compile 'com.alibaba:fastjson:1.2.21'](https://github.com/alibaba/fastjson)|[fastJson解析](http://blog.csdn.net/zadarrien_china/article/details/54630790)|
 |[Android-PullToRefresh-master -> library](https://github.com/chrisbanes/Android-PullToRefresh)|PullToRefresh下拉刷新|
-|-------------图片加载框架----------------------|
-|[ compile 'com.github.bumptech.glide:glide:3.7.0'](https://github.com/bumptech/glide)|Glide图片加载|
+|--图片加载框架--|
+|[compile 'com.github.bumptech.glide:glide:3.7.0'](https://github.com/bumptech/glide)|Glide图片加载，适用于少量图片加载|
+|[compile 'com.facebook.fresco:fresco:1.0.1'](https://github.com/facebook/fresco)|FaceBook出品，适用于大量图片加载|
 
 ###Components
 | 类库 |  类库说明  |
