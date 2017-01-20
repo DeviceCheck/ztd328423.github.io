@@ -19,6 +19,7 @@
 |[compile 'com.google.zxing:core:3.3.1'](https://github.com/zxing/zxing)|二维码|
 |[compile 'org.greenrobot:eventbus:3.0.0'](https://github.com/greenrobot/EventBus)|EventBus|
 |[compile 'com.alibaba:fastjson:1.2.21'](https://github.com/alibaba/fastjson)|fastJson解析|
+|[Android-PullToRefresh-master -> library](https://github.com/chrisbanes/Android-PullToRefresh)|PullToRefresh下拉刷新|
 
 ###Components
 | 类库 |  类库说明  |
