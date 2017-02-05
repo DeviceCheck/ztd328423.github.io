@@ -44,4 +44,5 @@
 |-------|-------|
 |[Android知识梳理](https://gold.xitu.io/post/587dbaf9570c3522010e400e)|android基本知识|
 |[2016 Top 10 Android Library](https://gold.xitu.io/post/587d83d4570c3522010c71b8)|优秀的安卓库|
+|[AndroidStudio快捷键](http://jaeger.itscoder.com/android/2016/02/14/android-studio-tips.html)|AndroidStudio|
 </details>
