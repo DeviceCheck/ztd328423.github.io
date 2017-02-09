@@ -27,6 +27,7 @@
 |--图片加载框架--|
 |[compile 'com.github.bumptech.glide:glide:3.7.0'](https://github.com/bumptech/glide)|Glide图片加载，适用于少量图片加载|
 |[compile 'com.facebook.fresco:fresco:1.0.1'](https://github.com/facebook/fresco)|FaceBook出品，适用于大量图片加载|
+|[compile 'com.yalantis:ucrop:2.2.0'](https://github.com/Yalantis/uCrop)|图片剪裁库|
 |--数据库--|
 |[Android sqlite](https://developer.android.com/training/basics/data-storage/databases.html?hl=zh-cn)|sqlite数据库|
 |[classpath "io.realm:realm-gradle-plugin:2.3.0"](https://realm.io/)|Relam移动端的新型轻量数据库(ORM框架)|
