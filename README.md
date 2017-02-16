@@ -34,7 +34,7 @@
 |[Android sqlite](https://developer.android.com/training/basics/data-storage/databases.html?hl=zh-cn)|sqlite数据库|
 |[classpath "io.realm:realm-gradle-plugin:2.3.0"](https://realm.io/)|Relam移动端的新型轻量数据库(ORM框架)|
 |--工具类--|
-|[检查网络的工具类](http://www.jianshu.com/p/fa877daf7406)|[当前连接的网络类型检测--github](https://github.com/Blankj/AndroidUtilCode/blob/master/utilcode/src/main/java/com/blankj/utilcode/utils/NetworkUtils.java）
+|[检查网络的工具类](http://www.jianshu.com/p/fa877daf7406)|[当前连接的网络类型检测--github](https://github.com/Blankj/AndroidUtilCode/blob/master/utilcode/src/main/java/com/blankj/utilcode/utils/NetworkUtils.java)
 |--Android图表--|
 |[Android图表库](https://github.com/xcltapestry/XCL-Charts)|Android XCL-Charts|
 
