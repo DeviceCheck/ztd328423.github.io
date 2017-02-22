@@ -64,4 +64,5 @@
 |[shape样式](http://keeganlee.me/post/android/20150830)|Android shape|
 |[数据采集与埋点](https://sensorsdata.cn/manual/)|Android数据分析|
 |[Android常用Manager](https://gold.xitu.io/entry/5752c346df0eea00644e98d9)|Android Manager|
+|[Android 面试](https://www.diycode.cc/wiki/androidinterview)|面试指南|
 </details>
