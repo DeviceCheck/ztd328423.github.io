@@ -49,6 +49,8 @@
 |-------|------|
 |[美团点评技术团队](http://tech.meituan.com/)|美团|
 |[CSDN](http://www.csdn.net/tag/%E7%A7%BB%E5%8A%A8%E5%BC%80%E5%8F%91/news)|Android CSDN|
+|[segmentFault](https://gold.xitu.io/entry/5752c346df0eea00644e98d9)|Android segmentFault|
+
 ###博客文章
 | 文章  | 说明  |
 |-------|-------|
