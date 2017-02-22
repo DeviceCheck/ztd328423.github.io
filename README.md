@@ -44,6 +44,12 @@
 |[compile 'com.roughike:bottom-bar:2.1.1'](https://github.com/roughike/BottomBar)|底部导航栏|
 |[awesome-android-ui](https://github.com/wasabeef/awesome-android-ui)|UI效果实现|
 
+###企业
+| 类库 |  类库说明  |
+|-------|------|
+|[美团点评技术团队](http://tech.meituan.com/)|美团|
+
+
 ###博客文章
 | 文章  | 说明  |
 |-------|-------|
