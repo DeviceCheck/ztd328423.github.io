@@ -61,4 +61,5 @@
 |[ConstraintLayout使用](https://gold.xitu.io/post/57e25895816dfa0067102bd8)|Android ConstraintLayout|
 |[shape样式](http://keeganlee.me/post/android/20150830)|Android shape|
 |[数据采集与埋点](https://sensorsdata.cn/manual/)|Android数据分析|
+|[Android常用Manager](https://gold.xitu.io/entry/5752c346df0eea00644e98d9)|Android Manager|
 </details>
