@@ -59,10 +59,5 @@
 |[AndroidStudio快捷键](http://jaeger.itscoder.com/android/2016/02/14/android-studio-tips.html)|AndroidStudio|
 |[sqlite database数据库升级](https://www.cnblogs.com/liqw/p/4264925.html)|Android sqlite|
 |[MVC，MVP, MVVM博客](http://www.ruanyifeng.com/blog/2015/02/mvcmvp_mvvm.html)|Android 架构介绍|
-|[Android系统服务一览表](http://blog.csdn.net/zhgxhuaa/article/details/24835065)|Android 系统服务|
-|[ConstraintLayout使用](https://gold.xitu.io/post/57e25895816dfa0067102bd8)|Android ConstraintLayout|
-|[shape样式](http://keeganlee.me/post/android/20150830)|Android shape|
-|[数据采集与埋点](https://sensorsdata.cn/manual/)|Android数据分析|
-|[Android常用Manager](https://gold.xitu.io/entry/5752c346df0eea00644e98d9)|Android Manager|
-|[Android 面试](https://www.diycode.cc/wiki/androidinterview)|面试指南|
+
 </details>
