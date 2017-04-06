@@ -40,21 +40,9 @@
 
 ###Components
 | 类库 |  类库说明  |
-|-------|------|
+|-------|--------|
 |[compile 'com.roughike:bottom-bar:2.1.1'](https://github.com/roughike/BottomBar)|底部导航栏|
 |[awesome-android-ui](https://github.com/wasabeef/awesome-android-ui)|UI效果实现|
 
-###企业
-| 类库 |  类库说明  |
-|-------|------|
-|[美团点评技术团队](http://tech.meituan.com/)|美团|
-|[CSDN](http://www.csdn.net/tag/%E7%A7%BB%E5%8A%A8%E5%BC%80%E5%8F%91/news)|Android CSDN|
-|[segmentFault](https://gold.xitu.io/entry/5752c346df0eea00644e98d9)|Android segmentFault|
 
-###博客文章
-| 文章  | 说明  |
-|-------|-------|
-
-|[Android常用Manager](https://gold.xitu.io/entry/5752c346df0eea00644e98d9)|Android Manager|
-|[Android 面试](https://www.diycode.cc/wiki/androidinterview)|面试指南|
 </details>
