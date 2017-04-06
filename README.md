@@ -37,7 +37,6 @@
 |[检查网络的工具类](http://www.jianshu.com/p/fa877daf7406)|[当前连接的网络类型检测--github](https://github.com/Blankj/AndroidUtilCode/blob/master/utilcode/src/main/java/com/blankj/utilcode/utils/NetworkUtils.java)
 |--Android图表--|
 |[Android图表库](https://github.com/xcltapestry/XCL-Charts)|Android XCL-Charts|
-
 |-----Components---------|
 |[compile 'com.roughike:bottom-bar:2.1.1'](https://github.com/roughike/BottomBar)|底部导航栏|
 |[awesome-android-ui](https://github.com/wasabeef/awesome-android-ui)|UI效果实现|
