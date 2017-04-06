@@ -54,10 +54,7 @@
 ###博客文章
 | 文章  | 说明  |
 |-------|-------|
-|[Android知识梳理](https://gold.xitu.io/post/587dbaf9570c3522010e400e)|android基本知识|
-|[2016 Top 10 Android Library](https://gold.xitu.io/post/587d83d4570c3522010c71b8)|优秀的安卓库|
-|[AndroidStudio快捷键](http://jaeger.itscoder.com/android/2016/02/14/android-studio-tips.html)|AndroidStudio|
-|[sqlite database数据库升级](https://www.cnblogs.com/liqw/p/4264925.html)|Android sqlite|
-|[MVC，MVP, MVVM博客](http://www.ruanyifeng.com/blog/2015/02/mvcmvp_mvvm.html)|Android 架构介绍|
 
+|[Android常用Manager](https://gold.xitu.io/entry/5752c346df0eea00644e98d9)|Android Manager|
+|[Android 面试](https://www.diycode.cc/wiki/androidinterview)|面试指南|
 </details>
