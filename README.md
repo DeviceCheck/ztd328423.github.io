@@ -6,6 +6,29 @@
 |应用架构采用 [clean 架构](http://fernandocejas.com/2014/09/03/architecting-android-the-clean-way/)|官方介绍|
 |Google 提供的 Android 架构 [MVP+Clean](https://github.com/googlesamples/android-architecture/tree/todo-mvp-clean)|github|
 
+
+###企业
+| 类库 |  类库说明  |
+|-------|------|
+|[美团点评技术团队](http://tech.meituan.com/)|美团|
+|[CSDN](http://www.csdn.net/tag/%E7%A7%BB%E5%8A%A8%E5%BC%80%E5%8F%91/news)|Android CSDN|
+|[segmentFault](https://gold.xitu.io/entry/5752c346df0eea00644e98d9)|Android segmentFault|
+
+###博客文章
+| 文章  | 说明  |
+|-------|-------|
+|[Android知识梳理](https://gold.xitu.io/post/587dbaf9570c3522010e400e)|android基本知识|
+|[2016 Top 10 Android Library](https://gold.xitu.io/post/587d83d4570c3522010c71b8)|优秀的安卓库|
+|[AndroidStudio快捷键](http://jaeger.itscoder.com/android/2016/02/14/android-studio-tips.html)|AndroidStudio|
+|[sqlite database数据库升级](https://www.cnblogs.com/liqw/p/4264925.html)|Android sqlite|
+|[MVC，MVP, MVVM博客](http://www.ruanyifeng.com/blog/2015/02/mvcmvp_mvvm.html)|Android 架构介绍|
+|[Android系统服务一览表](http://blog.csdn.net/zhgxhuaa/article/details/24835065)|Android 系统服务|
+|[ConstraintLayout使用](https://gold.xitu.io/post/57e25895816dfa0067102bd8)|Android ConstraintLayout|
+|[shape样式](http://keeganlee.me/post/android/20150830)|Android shape|
+|[数据采集与埋点](https://sensorsdata.cn/manual/)|Android数据分析|
+|[Android常用Manager](https://gold.xitu.io/entry/5752c346df0eea00644e98d9)|Android Manager|
+|[Android 面试](https://www.diycode.cc/wiki/androidinterview)|面试指南|
+
 <details>
   <summary>展开列表</summary>
 
@@ -40,27 +63,4 @@
 |-----Components---------|
 |[compile 'com.roughike:bottom-bar:2.1.1'](https://github.com/roughike/BottomBar)|底部导航栏|
 |[awesome-android-ui](https://github.com/wasabeef/awesome-android-ui)|UI效果实现|
-
-
-###企业
-| 类库 |  类库说明  |
-|-------|------|
-|[美团点评技术团队](http://tech.meituan.com/)|美团|
-|[CSDN](http://www.csdn.net/tag/%E7%A7%BB%E5%8A%A8%E5%BC%80%E5%8F%91/news)|Android CSDN|
-|[segmentFault](https://gold.xitu.io/entry/5752c346df0eea00644e98d9)|Android segmentFault|
-
-###博客文章
-| 文章  | 说明  |
-|-------|-------|
-|[Android知识梳理](https://gold.xitu.io/post/587dbaf9570c3522010e400e)|android基本知识|
-|[2016 Top 10 Android Library](https://gold.xitu.io/post/587d83d4570c3522010c71b8)|优秀的安卓库|
-|[AndroidStudio快捷键](http://jaeger.itscoder.com/android/2016/02/14/android-studio-tips.html)|AndroidStudio|
-|[sqlite database数据库升级](https://www.cnblogs.com/liqw/p/4264925.html)|Android sqlite|
-|[MVC，MVP, MVVM博客](http://www.ruanyifeng.com/blog/2015/02/mvcmvp_mvvm.html)|Android 架构介绍|
-|[Android系统服务一览表](http://blog.csdn.net/zhgxhuaa/article/details/24835065)|Android 系统服务|
-|[ConstraintLayout使用](https://gold.xitu.io/post/57e25895816dfa0067102bd8)|Android ConstraintLayout|
-|[shape样式](http://keeganlee.me/post/android/20150830)|Android shape|
-|[数据采集与埋点](https://sensorsdata.cn/manual/)|Android数据分析|
-|[Android常用Manager](https://gold.xitu.io/entry/5752c346df0eea00644e98d9)|Android Manager|
-|[Android 面试](https://www.diycode.cc/wiki/androidinterview)|面试指南|
 </details>
