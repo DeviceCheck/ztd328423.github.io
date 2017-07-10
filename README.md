@@ -1,6 +1,3 @@
-<iframe height=498 width=510 src="http://player.youku.com/embed/XNjcyMDU4Njg0">
-
-
 #[个人博客](http://ztd328423.github.io)
 
 ### 应用架构
