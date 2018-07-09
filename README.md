@@ -83,4 +83,5 @@
 |[BGABanner-Android](https://github.com/bingoogolapple/BGABanner-Android)|android 轮播图工具类|
 |[hellocharts-android](https://github.com/lecho/hellocharts-android)|android 图表工具类|
 |[FlowLayout](https://github.com/hongyangAndroid/FlowLayout)|Android流式布局，支持单选、多选等，适合用于产品标签等。|
+|[RecyclerViewPager](https://github.com/lsjwzh/RecyclerViewPager)|android.support.v4.view.ViewPager的完美替代品|
 
