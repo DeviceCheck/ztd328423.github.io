@@ -80,4 +80,5 @@
 |[GestureLockView](https://github.com/zyyoona7/GestureLockView)|android 手势解锁|
 |[ViewPager](https://github.com/alibaba/UltraViewPager)|android ViewPager 工具类|
 |[awesome-android-ui](https://github.com/wasabeef/awesome-android-ui)|android awesome-android-ui 页面展示|
+|[BGABanner-Android](https://github.com/bingoogolapple/BGABanner-Android)|android 轮播图工具类|
 
