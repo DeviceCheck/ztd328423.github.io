@@ -77,4 +77,6 @@
 |-------|-------|
 |[awesome-resume](https://github.com/ztd328423/awesome-resume|简历和面试|
 |[rplibs](https://github.com/ztd328423/rplibs|axture 设计元件库|
+|[UETool](https://github.com/eleme/UETool/blob/master/README_zh.md|android 调试工具|
+|[GestureLockView](https://github.com/ztd328423/GestureLockView-1|android 手势解锁|
 
