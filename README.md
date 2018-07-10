@@ -102,6 +102,7 @@
 |[SpinMenu](https://github.com/ztd328423/SpinMenu)|android 轮盘样式的 Fragment 菜单选择控件|
 |[FingerprintScanHelper](https://github.com/jianyuyouhun/FingerprintScanHelper)|android 指纹识别|
 |[ZoomHeader](https://github.com/githubwing/ZoomHeader)|神交互。模仿饿了么详情页可以跟随手指移动 viewpager变详情页|
+|[CircleDemo](https://github.com/Naoki2015/CircleDemo)|仿微信(weixin wechat)实现的朋友圈，模拟与后台交互实现了点赞、评论、删除等功能，RecyclerView可以根据键盘的显示或隐藏实现联动。增加短视频拍摄功能，与后台交互采用mvp模式。关键字：wechat weixin 微信朋友圈|
 
 ### 项目
 | 名称  | 说明  |
