@@ -93,6 +93,7 @@
 |[excelPanel](https://github.com/zhouchaoyuan/excelPanel)|android excel|
 |[Android-Coverflow](https://github.com/crosswall/Android-Coverflow)|android Coverflow|
 |[BookReader](https://github.com/JustWayward/BookReader)|"任阅" 网络小说阅读器，追书推荐收藏、书籍/标签检索、模拟翻书的翻页效果、缓存书籍、日夜间模式、书签、txt/pdf/epub书籍阅读、Wifi传书~ https://github.com/smuyyh|
+|[BGAQRCode-Android](https://github.com/bingoogolapple/BGAQRCode-Android)|android 二维码|
 
 ### 项目
 | 名称  | 说明  |
