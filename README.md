@@ -88,6 +88,7 @@
 |[banner](https://github.com/youth5201314/banner)|android 图片轮播控件|
 |[ViewPagerCards](https://github.com/rubensousa/ViewPagerCards)|android 卡片滑动|
 |[LoopRotarySwitch](https://github.com/dalong982242260/LoopRotarySwitch)|android 3d旋转切换view，类似旋转木马效果。可以自动切换！|
+|[CoordinatorTabLayout](https://github.com/hugeterry/CoordinatorTabLayout)|android TabLayout和CoordinatorLayout相结合的折叠控件|
 
 ### 项目
 | 名称  | 说明  |
