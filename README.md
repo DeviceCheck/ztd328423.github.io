@@ -86,5 +86,5 @@
 |[RecyclerViewPager](https://github.com/lsjwzh/RecyclerViewPager)|android.support.v4.view.ViewPager的完美替代品|
 |[LockTableView](https://github.com/RmondJone/LockTableView)|android 自定义表格|
 |[banner](https://github.com/youth5201314/banner)|android 图片轮播控件|
-|[ViewPagerCards](https://github.com/ztd328423/ViewPagerCards)|android 卡片滑动|
+|[ViewPagerCards](https://github.com/rubensousa/ViewPagerCards)|android 卡片滑动|
 
