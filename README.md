@@ -101,6 +101,7 @@
 |[flexbox-layout](https://github.com/google/flexbox-layout)|google 伸缩布局|
 |[SpinMenu](https://github.com/ztd328423/SpinMenu)|android 轮盘样式的 Fragment 菜单选择控件|
 |[FingerprintScanHelper](https://github.com/jianyuyouhun/FingerprintScanHelper)|android 指纹识别|
+|[ZoomHeader](https://github.com/githubwing/ZoomHeader)|神交互。模仿饿了么详情页可以跟随手指移动 viewpager变详情页|
 
 ### 项目
 | 名称  | 说明  |
