@@ -91,6 +91,7 @@
 |[CoordinatorTabLayout](https://github.com/hugeterry/CoordinatorTabLayout)|android TabLayout和CoordinatorLayout相结合的折叠控件|
 |[InkeVerticalViewPagerLive](https://github.com/xingstarx/InkeVerticalViewPagerLive)|android 仿映客viewPager上下滑动切换直播|
 |[excelPanel](https://github.com/zhouchaoyuan/excelPanel)|android excel|
+|[Android-Coverflow](https://github.com/crosswall/Android-Coverflow)|android Coverflow|
 
 ### 项目
 | 名称  | 说明  |
