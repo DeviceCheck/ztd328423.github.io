@@ -100,6 +100,7 @@
 |[3dTagCloudAndroid](https://github.com/misakuo/3dTagCloudAndroid)|android 3D球形集合|
 |[flexbox-layout](https://github.com/google/flexbox-layout)|google 伸缩布局|
 |[SpinMenu](https://github.com/ztd328423/SpinMenu)|android 轮盘样式的 Fragment 菜单选择控件|
+|[FingerprintScanHelper](https://github.com/jianyuyouhun/FingerprintScanHelper)|android 指纹识别|
 
 ### 项目
 | 名称  | 说明  |
