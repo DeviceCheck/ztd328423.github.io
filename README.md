@@ -92,6 +92,7 @@
 |[InkeVerticalViewPagerLive](https://github.com/xingstarx/InkeVerticalViewPagerLive)|android 仿映客viewPager上下滑动切换直播|
 |[excelPanel](https://github.com/zhouchaoyuan/excelPanel)|android excel|
 |[Android-Coverflow](https://github.com/crosswall/Android-Coverflow)|android Coverflow|
+|[BookReader](https://github.com/JustWayward/BookReader)|"任阅" 网络小说阅读器，追书推荐收藏、书籍/标签检索、模拟翻书的翻页效果、缓存书籍、日夜间模式、书签、txt/pdf/epub书籍阅读、Wifi传书~ https://github.com/smuyyh|
 
 ### 项目
 | 名称  | 说明  |
