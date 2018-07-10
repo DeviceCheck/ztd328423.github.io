@@ -98,6 +98,7 @@
 |[MaterialDesignExample](https://github.com/HanteIsHante/MaterialDesignExample)|android MaterialDesign|
 |[AVLoadingIndicatorView](https://github.com/SuperZhouyong/AVLoadingIndicatorView)|android 正在加载icon|
 |[3dTagCloudAndroid](https://github.com/misakuo/3dTagCloudAndroid)|android 3D球形集合|
+|[flexbox-layout](https://github.com/google/flexbox-layout)|google 伸缩布局|
 
 ### 项目
 | 名称  | 说明  |
