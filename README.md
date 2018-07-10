@@ -96,6 +96,7 @@
 |[BGAQRCode-Android](https://github.com/bingoogolapple/BGAQRCode-Android)|android 二维码|
 |[SlidingCard](https://github.com/mxn21/SlidingCard)|android 图片滑动集|
 |[MaterialDesignExample](https://github.com/HanteIsHante/MaterialDesignExample)|android MaterialDesign|
+|[AVLoadingIndicatorView](https://github.com/SuperZhouyong/AVLoadingIndicatorView)|android 正在加载icon|
 
 ### 项目
 | 名称  | 说明  |
