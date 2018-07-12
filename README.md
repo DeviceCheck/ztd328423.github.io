@@ -109,6 +109,7 @@
 |[android Lazy](https://github.com/l123456789jy/Lazy)|android The android tools 自己整理的常用的工具类|
 |[android tab-digit](https://github.com/xenione/tab-digit)|android 数字翻页效果|
 |[android PasswordInput](https://github.com/EthanCo/PasswordInput)|android 密码输入框、密码输入对话框-具有Material Design渐变动画效果的密码控件及对话框 PasswordInput、PasswordDialog|
+|[android google-api-java-client](https://github.com/google/google-api-java-client)|android google-api-java-client|
 
 ### 项目
 | 名称  | 说明  |
