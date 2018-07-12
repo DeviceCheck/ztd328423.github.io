@@ -117,6 +117,7 @@
 |[android Roll3DImageView](https://github.com/zhangyuChen1991/Roll3DImageView)|android 一个实现图片花式3D翻转效果的自定义View|
 |[android InfiniteCycleViewPager](https://github.com/Devlight/InfiniteCycleViewPager)|android 循环 view pager|
 |[android ExpandingPager](https://github.com/qs-lll/ExpandingPager)|android ExpandingPager|
+|[android ChangeTabLayout](https://github.com/simplezhli/ChangeTabLayout)|android ChangeTabLayout是模仿乐视LIVE App主界面TabLayout效果。|
 
 ### 项目
 | 名称  | 说明  |
