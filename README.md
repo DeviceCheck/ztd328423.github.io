@@ -128,6 +128,7 @@
 |[android GalleryLayoutManager](https://github.com/BCsl/GalleryLayoutManager)|Android 使用自定义 LayoutManager 实现 Android 中 Gallery 或者 ViewPager 控件的效果，支持垂直和水平两个方向，支持 RecycleView 的试图回收机制|
 |[android StickyListHeaders](https://github.com/emilsjolander/StickyListHeaders)|Android 国家选择 滑动标题动画|
 |[android gvr-android-sdk](https://github.com/googlevr/gvr-android-sdk)|Android Google VR|
+|[android SwipeRecyclerView](https://github.com/yanzhenjie/SwipeRecyclerView)|RecyclerView侧滑菜单，Item拖拽，滑动删除Item，自动加载更多，HeaderView，FooterView，Item分组黏贴。|
 
 
 
