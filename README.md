@@ -134,6 +134,7 @@
 |[android Android-Pay](https://github.com/mayubao/Android-Pay)| 支持微信和支付宝两种主流支付的集成库， 两行代码实现微信支付， 三行代码实现支付宝支付|
 |[android CircleIndicator](https://github.com/ongakuer/CircleIndicator)|android circle indicator|
 |[android HeaderViewPager](https://github.com/jeasonlzy/HeaderViewPager)|android 具有共同头部的 ViewPager，支持与ListView，GridView，ScrollView，WebView，RecyclerView 嵌套使用。具有连续的滑动事件 和 滑动监听， 支持下拉刷新。|
+|[android Android-ParallaxHeaderViewPager](https://github.com/kmshack/Android-ParallaxHeaderViewPager)|android ParallaxHeaderViewPager|
 
 
 
