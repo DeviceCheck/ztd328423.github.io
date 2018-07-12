@@ -131,6 +131,7 @@
 |[android SwipeRecyclerView](https://github.com/yanzhenjie/SwipeRecyclerView)|RecyclerView侧滑菜单，Item拖拽，滑动删除Item，自动加载更多，HeaderView，FooterView，Item分组黏贴。|
 |[android ModularizationProject](https://github.com/BaronZ88/ModularizationProject)|Android 模块化示例项目|
 |[android coding-interview-university](https://github.com/jwasham/coding-interview-university)| Google Interview University 一套完整的学习手册帮助自己准备 Google 的面试|
+|[android Android-Pay](https://github.com/mayubao/Android-Pay)| 支持微信和支付宝两种主流支付的集成库， 两行代码实现微信支付， 三行代码实现支付宝支付|
 
 
 
