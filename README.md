@@ -120,6 +120,7 @@
 |[android ChangeTabLayout](https://github.com/simplezhli/ChangeTabLayout)|android ChangeTabLayout是模仿乐视LIVE App主界面TabLayout效果。|
 |[android BiDirTable](https://github.com/ztd328423/BiDirTable)|android 可双向滑动的表格|
 |[android MagicViewPager](https://github.com/hongyangAndroid/MagicViewPager)|android 单页显示3个Item的ViewPager炫酷切换效果，适用于Banner等|
+|[android baseAdapter](https://github.com/hongyangAndroid/baseAdapter)|Android 万能的Adapter for ListView,RecyclerView,GridView等，支持多种Item类型的情况。|
 
 
 
