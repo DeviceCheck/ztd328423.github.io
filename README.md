@@ -113,7 +113,7 @@
 | 名称  | 说明  |
 |-------|-------|
 |[NewFastFrame](https://github.com/HelloChenJinJun/NewFastFrame)|终极组件化框架项目方案(该项目目前集成现在主流的开发框架和技术，包括okhttp3、rxjava2、retrofit2、glide、greendao3.0、dagger2、mvp、md风格、热修复tinker,bugly和组件化等。采用组件化开发框架，可以使模块单独编译调试，可以有效地减少编译的时间，更好地进行并发开发，从而极大的提高了并行开发效率。)|
-|[android ListenerMusicPlayer](https://github.com/hefuyicoder/ListenerMusicPlayer)|一款优雅的遵循 Material Design 的开源音乐播放器，UI参考 腾讯轻听 音乐播放器,使用 Lastfm Api 与 酷狗歌词Api。项目架构采用 mvp-clean，基于 Retrofit2 + Dagger2 + Rxjava + RxBus + Glide。|
+|[ListenerMusicPlayer](https://github.com/hefuyicoder/ListenerMusicPlayer)|一款优雅的遵循 Material Design 的开源音乐播放器，UI参考 腾讯轻听 音乐播放器,使用 Lastfm Api 与 酷狗歌词Api。项目架构采用 mvp-clean，基于 Retrofit2 + Dagger2 + Rxjava + RxBus + Glide。|
 
 
 ### 工具类
