@@ -115,6 +115,7 @@
 |[android GraphView](https://github.com/jjoe64/GraphView)|android 曲线图|
 |[android GiftSurfaceView](https://github.com/jenly1314/GiftSurfaceView)|android 直播间礼物动画控件|
 |[android Roll3DImageView](https://github.com/zhangyuChen1991/Roll3DImageView)|android 一个实现图片花式3D翻转效果的自定义View|
+|[android InfiniteCycleViewPager](https://github.com/Devlight/InfiniteCycleViewPager)|android 循环 view pager|
 
 ### 项目
 | 名称  | 说明  |
