@@ -124,7 +124,7 @@
 |[android WilliamChart](https://github.com/diogobernardino/WilliamChart)|Android 图表库|
 |[android transferee](https://github.com/Hitomis/transferee)|Android 一个帮助您完成从缩略图到原图无缝过渡转变的神奇组件|
 |[android-ripple-background](https://github.com/skyfishjy/android-ripple-background)|Android 类似与 ripple效果|
-
+|[android ViewPagerIndicator](https://github.com/LuckyJayce/ViewPagerIndicator)|Android Indicator 取代 tabhost，实现网易顶部tab，新浪微博主页底部tab，引导页，无限轮播banner等效果，高度自定义tab和特|
 
 
 
