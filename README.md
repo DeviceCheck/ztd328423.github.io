@@ -133,6 +133,7 @@
 |[android coding-interview-university](https://github.com/jwasham/coding-interview-university)| Google Interview University 一套完整的学习手册帮助自己准备 Google 的面试|
 |[android Android-Pay](https://github.com/mayubao/Android-Pay)| 支持微信和支付宝两种主流支付的集成库， 两行代码实现微信支付， 三行代码实现支付宝支付|
 |[android CircleIndicator](https://github.com/ongakuer/CircleIndicator)|android circle indicator|
+|[android HeaderViewPager](https://github.com/jeasonlzy/HeaderViewPager)|android 具有共同头部的 ViewPager，支持与ListView，GridView，ScrollView，WebView，RecyclerView 嵌套使用。具有连续的滑动事件 和 滑动监听， 支持下拉刷新。|
 
 
 
