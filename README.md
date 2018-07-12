@@ -105,6 +105,7 @@
 |[CircleDemo](https://github.com/Naoki2015/CircleDemo)|仿微信(weixin wechat)实现的朋友圈，模拟与后台交互实现了点赞、评论、删除等功能，RecyclerView可以根据键盘的显示或隐藏实现联动。增加短视频拍摄功能，与后台交互采用mvp模式。关键字：wechat weixin 微信朋友圈|
 |[ScalingLayout](https://github.com/iammert/ScalingLayout)|android 可以缩放layout|
 |[ThreeDLayout](https://github.com/githubwing/ThreeDLayout)|一款3D Layout，他可以让任何view拥有3D效果，可以触摸展示3D效果，或者执行翻转动画。|
+|[android utils](https://github.com/Blankj/AndroidUtilCode)|android Android开发人员不得不收集的代码|
 
 ### 项目
 | 名称  | 说明  |
