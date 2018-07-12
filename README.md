@@ -118,6 +118,10 @@
 |[android InfiniteCycleViewPager](https://github.com/Devlight/InfiniteCycleViewPager)|android 循环 view pager|
 |[android ExpandingPager](https://github.com/qs-lll/ExpandingPager)|android ExpandingPager|
 |[android ChangeTabLayout](https://github.com/simplezhli/ChangeTabLayout)|android ChangeTabLayout是模仿乐视LIVE App主界面TabLayout效果。|
+|[android BiDirTable](https://github.com/ztd328423/BiDirTable)|android 可双向滑动的表格|
+
+
+
 
 ### 项目
 | 名称  | 说明  |
