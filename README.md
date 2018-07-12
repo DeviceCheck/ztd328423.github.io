@@ -112,6 +112,7 @@
 |[android google-api-java-client](https://github.com/google/google-api-java-client)|android google-api-java-client|
 |[android AndroidHttpCapture](https://github.com/JZ-Darkal/AndroidHttpCapture)|AndroidHttpCapture网络诊断工具 是一款Android手机抓包软件 主要功能包括：手机端抓包、PING/DNS/TraceRoute诊断、抓包HAR数据上传分享。你也可以看成是Android版的"Fiddler" \(^o^)/~|
 |[android MZBannerView](https://github.com/pinguo-zhouwei/MZBannerView)|android 仿魅族BannerView,图片轮播控件,支持多种模式切换：普通ViewPager使用，普通Banner使用，仿魅族Banner使用。|
+|[android GraphView](https://github.com/jjoe64/GraphView)|android 曲线图|
 
 ### 项目
 | 名称  | 说明  |
