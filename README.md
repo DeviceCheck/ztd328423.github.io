@@ -137,6 +137,7 @@
 |[android Android-ParallaxHeaderViewPager](https://github.com/kmshack/Android-ParallaxHeaderViewPager)|android ParallaxHeaderViewPager|
 |[TwinklingRefreshLayout](https://github.com/lcodecorex/TwinklingRefreshLayout)|下啦刷新 带阻尼效果|
 |[Captcha](https://github.com/luozhanming/Captcha)|图形验证码|
+|[HeaderAndFooterRecyclerView](https://github.com/cundong/HeaderAndFooterRecyclerView)|分页加载|
 
 
 
