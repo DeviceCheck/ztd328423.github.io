@@ -138,8 +138,9 @@
 |[TwinklingRefreshLayout](https://github.com/lcodecorex/TwinklingRefreshLayout)|下啦刷新 带阻尼效果|
 |[Captcha](https://github.com/luozhanming/Captcha)|图形验证码|
 |[HeaderAndFooterRecyclerView](https://github.com/cundong/HeaderAndFooterRecyclerView)|分页加载|
-|[tool](https://github.com/Louiszhai/tool)|开发效率提升：Mac生产力工具链推荐
-|
+|[tool](https://github.com/Louiszhai/tool)|开发效率提升：Mac生产力工具链推荐|
+|[RangeSeekBar](https://github.com/Jay-Goo/RangeSeekBar)|一款美观强大的支持双向范围选择和垂直的SeekBar|
+
 
 
 
