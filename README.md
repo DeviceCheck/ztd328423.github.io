@@ -163,11 +163,18 @@
 |[AndroidNote](https://github.com/GcsSloop/AndroidNote)|android 记录学习过程中遇到的问题,以及我的一些经验总结|
 |[Android-ReadTheFuckingSourceCode](https://github.com/jeanboydev/Android-ReadTheFuckingSourceCode)|记录日常的开发技巧，开发中遇到的技术重点、难点，各个知识点的总结，优质面试题等等。持续更新...|
 |[ARouter](https://github.com/alibaba/ARouter)|android 路由机制|
+|[DoraemonKit](https://github.com/didi/DoraemonKit)|android 简称 "DoKit" 。一款功能齐全的客户端（ iOS 、Android ）研发助手，你值得拥有。
+ |
 
 ### 点赞效果
 | 文章  | 说明  |
 |-------|-------|
 |[SparkButton](https://github.com/varunest/SparkButton)|Android 点赞效果|
 |[SmartRefreshLayout](https://github.com/scwang90/SmartRefreshLayout)|下拉刷新、上拉加载、二级刷新、淘宝二楼、RefreshLayout、OverScroll，Android智能下拉刷新框架，支持越界回弹、越界拖动，具有极强的扩展性，集成了几十种炫酷的Header和 Footer|
+
+### 动画
+| 文章  | 说明  |
+|-------|-------|
+|[android-ConstraintLayoutExamples](https://github.com/googlesamples/android-ConstraintLayoutExamples)|Android google 动画效果|
 
 
