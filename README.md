@@ -143,8 +143,7 @@
 |[Gloading](https://github.com/luckybilly/Gloading)|深度解耦Android App中全局加载中、加载失败及空数据视图|
 |[MCropImageView](https://github.com/HpWens/MCropImageView)|炫酷的小红书图片裁剪控件|
 |[Matisse](https://github.com/zhihu/Matisse)|图片选择库|
-
-
+|[AppUpdate](https://github.com/azhon/AppUpdate)|一个简单、轻量、可随意定制 的Android版本更新库 |
 
 
 ### 项目
