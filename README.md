@@ -151,6 +151,7 @@
 |[ShimmerRecyclerView](https://github.com/sharish/ShimmerRecyclerView)|Shimmer recyclerview 预加载功能|
 |[TimeLineStepView](https://github.com/joketng/TimeLineStepView)|时间线 样式|
 |[TwinklingRefreshLayout](https://github.com/lcodecorex/TwinklingRefreshLayout)|支持下拉刷新和上拉加载的RefreshLayout,自带越界回弹效果|
+|[ExpandTextView](https://github.com/lcodecorex/ExpandTextView)|可展开(Expand)的TextView,保留了TextView的属性,方便易用|
 
 ### 项目
 | 名称  | 说明  |
