@@ -159,6 +159,7 @@
 |[NineGridView](https://github.com/jeasonlzy/NineGridView)|类似QQ空间，微信朋友圈，微博主页等，展示图片的九宫格控件，自动根据图片的数量确定图片大小和控件大小，使用Adapter模式设置图片，对外提供接口回调，使用接口加载图片,支持任意的图片加载框架,如 Glide,ImageLoader,Fresco,xUtils3,Picasso 等，支持点击图片全屏预览大图。|
 |[AndroidViewAnimations](https://github.com/daimajia/AndroidViewAnimations)|View动画|
 |[HotImg](https://github.com/dreamlivemeng/HotImg)|图片不规则区域点击事件处理|
+|[CalendarView](https://github.com/huanghaibin-dev/CalendarView)|Android上一个优雅、万能自定义UI、支持周视图、自定义周起始、性能高效的日历控件，支持热插拔实现的UI定制！支持标记、自定义颜色、农历、自定义月视图各种显示模式等。Canvas绘制，速度快、占用内存低，你真的想不到日历居然还可以如此优雅！An elegant, highly customized and high-performance Calendar Widget on Android.|
 
 ### 项目
 | 名称  | 说明  |
