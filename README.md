@@ -163,6 +163,7 @@
 |[BridgeWebView](https://github.com/open-android/BridgeWebView)|H5和Android通信框架，让H5和Android相互调用更加简单。|
 |[IndicatorSeekBar](https://github.com/warkiz/IndicatorSeekBar)|android 可以拖动的seekbar|
 |[WeixinLocation](https://github.com/xiaofuchen/WeixinLocation)|使用高德地图仿最新版微信发送位置实现，相似度高达99.99%|
+|[LRecyclerView](https://github.com/jdsjlzx/LRecyclerView)|RecyclerView下拉刷新，自动加载更多；仿IOS侧滑Item删除菜单（盼望大家扩展更多功能|
 
 ### 项目
 | 名称  | 说明  |
