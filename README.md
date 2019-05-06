@@ -142,6 +142,7 @@
 |[RangeSeekBar](https://github.com/Jay-Goo/RangeSeekBar)|一款美观强大的支持双向范围选择和垂直的SeekBar|
 |[Gloading](https://github.com/luckybilly/Gloading)|深度解耦Android App中全局加载中、加载失败及空数据视图|
 |[MCropImageView](https://github.com/HpWens/MCropImageView)|炫酷的小红书图片裁剪控件|
+|[Matisse](https://github.com/zhihu/Matisse)|图片选择库|
 
 
 
