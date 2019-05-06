@@ -162,6 +162,7 @@
 |[CalendarView](https://github.com/huanghaibin-dev/CalendarView)|Android上一个优雅、万能自定义UI、支持周视图、自定义周起始、性能高效的日历控件，支持热插拔实现的UI定制！支持标记、自定义颜色、农历、自定义月视图各种显示模式等。Canvas绘制，速度快、占用内存低，你真的想不到日历居然还可以如此优雅！An elegant, highly customized and high-performance Calendar Widget on Android.|
 |[BridgeWebView](https://github.com/open-android/BridgeWebView)|H5和Android通信框架，让H5和Android相互调用更加简单。|
 |[IndicatorSeekBar](https://github.com/warkiz/IndicatorSeekBar)|android 可以拖动的seekbar|
+|[WeixinLocation](https://github.com/xiaofuchen/WeixinLocation)|使用高德地图仿最新版微信发送位置实现，相似度高达99.99%|
 
 ### 项目
 | 名称  | 说明  |
