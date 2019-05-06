@@ -156,6 +156,7 @@
 |[CircleImageView](https://github.com/hdodenhof/CircleImageView)|圆形图片|
 |[AndroidCustomView](https://github.com/lygttpod/AndroidCustomView)|带你在实战中学习自定义view，通过几个完整的例子带你走进自定义View的美妙世界|
 |[HaloImageProgressView](https://github.com/hewking/HaloImageProgressView)|仿QQ 图片发送Loading view|
+|[NineGridView](https://github.com/jeasonlzy/NineGridView)|类似QQ空间，微信朋友圈，微博主页等，展示图片的九宫格控件，自动根据图片的数量确定图片大小和控件大小，使用Adapter模式设置图片，对外提供接口回调，使用接口加载图片,支持任意的图片加载框架,如 Glide,ImageLoader,Fresco,xUtils3,Picasso 等，支持点击图片全屏预览大图。|
 
 ### 项目
 | 名称  | 说明  |
