@@ -154,6 +154,7 @@
 |[ExpandTextView](https://github.com/lcodecorex/ExpandTextView)|可展开(Expand)的TextView,保留了TextView的属性,方便易用|
 |[Android-SplashView](https://github.com/jkyeo/Android-SplashView)|启动页 开屏页面|
 |[CircleImageView](https://github.com/hdodenhof/CircleImageView)|圆形图片|
+|[AndroidCustomView](https://github.com/lygttpod/AndroidCustomView)|带你在实战中学习自定义view，通过几个完整的例子带你走进自定义View的美妙世界|
 
 ### 项目
 | 名称  | 说明  |
