@@ -145,6 +145,7 @@
 |[Matisse](https://github.com/zhihu/Matisse)|图片选择库|
 |[AppUpdate](https://github.com/azhon/AppUpdate)|一个简单、轻量、可随意定制 的Android版本更新库|
 |[banner](https://github.com/youth5201314/banner)|Android广告图片轮播控件，支持无限循环和多种主题，可以灵活设置轮播样式、动画、轮播和切换时间、位置、图片加载框架等！|
+|[HtTextView](https://github.com/hanks-zyh/HTextView)|带动画的TextView|
 
 
 ### 项目
