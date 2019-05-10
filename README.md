@@ -164,6 +164,8 @@
 |[IndicatorSeekBar](https://github.com/warkiz/IndicatorSeekBar)|android 可以拖动的seekbar|
 |[WeixinLocation](https://github.com/xiaofuchen/WeixinLocation)|使用高德地图仿最新版微信发送位置实现，相似度高达99.99%|
 |[LRecyclerView](https://github.com/jdsjlzx/LRecyclerView)|RecyclerView下拉刷新，自动加载更多；仿IOS侧滑Item删除菜单（盼望大家扩展更多功能|
+|[BlurMenu](https://github.com/aohanyao/Android_UE)|仿新浪微博发布|
+|[SinaWeiBoPopupWindow](https://github.com/AsiaLYF/SinaWeiBoPopupWindow)|Android仿新浪微博首页加号弹出菜单效果|
 
 
 ### 项目
