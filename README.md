@@ -166,6 +166,7 @@
 |[LRecyclerView](https://github.com/jdsjlzx/LRecyclerView)|RecyclerView下拉刷新，自动加载更多；仿IOS侧滑Item删除菜单（盼望大家扩展更多功能|
 |[BlurMenu](https://github.com/aohanyao/Android_UE)|仿新浪微博发布|
 |[SinaWeiBoPopupWindow](https://github.com/AsiaLYF/SinaWeiBoPopupWindow)|Android仿新浪微博首页加号弹出菜单效果|
+|[TagViewGroup](https://github.com/shellljx/TagViewGroup)|Android 仿小红书图片标签Group|
 
 
 ### 项目
