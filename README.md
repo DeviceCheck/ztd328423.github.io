@@ -210,5 +210,6 @@
 |[flutter_BananaMon](https://github.com/hotstu/flutter_BananaMon)|flutter_BananaMon game|
 |[FlutterUI](https://github.com/yumi0629/FlutterUI)|FlutterUI 很多项目|
 |[zhihu-flutter](https://github.com/HackSoul/zhihu-flutter)|Flutter 高仿知乎 UI，非常漂亮，也非常流畅，flutter build apk 或 flutter build ios 之后更流畅|
+|[flutter_study](https://github.com/luhenchang/flutter_study)|三天学会Flutter|
 
 
