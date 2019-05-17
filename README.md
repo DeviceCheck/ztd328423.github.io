@@ -209,5 +209,6 @@
 |[GSYGithubAppFlutter](https://github.com/CarGuo/GSYGithubAppFlutter)|超完整的Flutter项目，功能丰富，适合学习和日常使用。GSYGithubApp系列的优势：我们目前已经拥有Flutter、Weex、ReactNative、kotlin 四个版本。 功能齐全，项目框架内技术涉及面广，完成度高，持续维护，配套文章，适合全面学习，对比参考。跨平台的开源Github客户端App，更好的体验，更丰富的功能，旨在更好的日常管理和维护个人Github，提供更好更方便的驾车体验Σ(￣。￣ﾉ)ﾉ。同款Weex版本 ： https://github.com/CarGuo/GSYGithubAppWeex    、同款React Native版本 ： https://github.com/CarGuo/GSYGithubApp 、原生 kotlin 版本 https://github.com/CarGuo/GSYGithubAppKotlin|
 |[flutter_BananaMon](https://github.com/hotstu/flutter_BananaMon)|flutter_BananaMon game|
 |[FlutterUI](https://github.com/yumi0629/FlutterUI)|FlutterUI 很多项目|
+|[zhihu-flutter](https://github.com/HackSoul/zhihu-flutter)|Flutter 高仿知乎 UI，非常漂亮，也非常流畅，flutter build apk 或 flutter build ios 之后更流畅|
 
 
