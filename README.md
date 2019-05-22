@@ -167,6 +167,7 @@
 |[BlurMenu](https://github.com/aohanyao/Android_UE)|仿新浪微博发布|
 |[SinaWeiBoPopupWindow](https://github.com/AsiaLYF/SinaWeiBoPopupWindow)|Android仿新浪微博首页加号弹出菜单效果|
 |[TagViewGroup](https://github.com/shellljx/TagViewGroup)|Android 仿小红书图片标签Group|
+|[XUI](https://github.com/xuexiangjys/XUI)|个简洁而优雅的Android原生UI框架，解放你的双手|
 
 
 ### 项目
