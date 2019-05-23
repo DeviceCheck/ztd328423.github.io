@@ -178,6 +178,7 @@
 |[tinker](https://github.com/Tencent/tinker)|android 热修复|
 |[CollapsingToolbar-With-Webview](https://github.com/RameshBhupathi/CollapsingToolbar-With-Webview)|android appbar平移动画|
 |[IndexBarLayout](https://github.com/qdxxxx/IndexBarLayout)|android 城市索引 名字索引|
+|[ShapedImageView](https://github.com/gavinliu/ShapedImageView)|android 自定义 圆 与 圆角|
 
 ### 项目
 | 名称  | 说明  |
