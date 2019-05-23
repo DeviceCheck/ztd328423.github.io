@@ -180,6 +180,7 @@
 |[IndexBarLayout](https://github.com/qdxxxx/IndexBarLayout)|android 城市索引 名字索引|
 |[ShapedImageView](https://github.com/gavinliu/ShapedImageView)|android 自定义 圆 与 圆角|
 |[Blur-LIB-Android](https://github.com/danielzeller/Blur-LIB-Android)|android 高斯模糊|
+|[citypicker](https://github.com/crazyandcoder/citypicker)|citypicker城市选择器，详细的省市区地址信息，支持仿iOS滚轮实现，仿京东样式，一级或者三级列表展示方式。|
 
 ### 项目
 | 名称  | 说明  |
