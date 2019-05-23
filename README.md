@@ -221,4 +221,5 @@
 |[zhihu-flutter](https://github.com/HackSoul/zhihu-flutter)|Flutter 高仿知乎 UI，非常漂亮，也非常流畅，flutter build apk 或 flutter build ios 之后更流畅|
 |[flutter_study](https://github.com/luhenchang/flutter_study)|三天学会Flutter|
 |[flutter](https://github.com/flutter/flutter)|flutter 官方 demo|
+|[WanAndroid-Flutter](https://github.com/canhuah/WanAndroid-Flutter)|Flutter版本 WanAndroid客户端  适合Flutter入门学习|
 
