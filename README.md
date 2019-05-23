@@ -175,6 +175,7 @@
 |[MDStudySamples](https://github.com/Mike-bel/MDStudySamples)|Android Material Design 材料设计风格的系统性学习案例|
 |[ZoomPreviewPicture](https://github.com/yangchaojiang/ZoomPreviewPicture)|拓展性极高类似微信图片和视频浏览,常见应用场景如微信朋友圈照片九宫格和微信聊天图片图片,视频,gif预览|
 |[protobuf](https://github.com/protocolbuffers/protobuf)|google 数据处理解析|
+|[tinker](https://github.com/Tencent/tinker)|android 热修复|
 
 
 ### 项目
