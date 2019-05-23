@@ -202,7 +202,7 @@
 |[advanced-java](https://github.com/doocs/advanced-java)|😮 互联网 Java 工程师进阶知识完全扫盲|
 |[StarsAndClown](https://github.com/zhaoolee/StarsAndClown)|Github星聚弃疗榜, 让吃瓜群众也能享受Github带来的乐|
 |[RetrofitUtils](https://github.com/open-android/RetrofitUtils|retrofit网络工具类|
-
+|[AVLoadingIndicatorView](https://github.com/81813780/AVLoadingIndicatorView|Android 加载动画|
 
 ### 点赞效果
 | 文章  | 说明  |
