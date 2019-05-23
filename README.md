@@ -231,3 +231,8 @@
 |[WanAndroid-Flutter](https://github.com/canhuah/WanAndroid-Flutter)|Flutter版本 WanAndroid客户端  适合Flutter入门学习|
 |[flutter-desktop-embedding](https://github.com/google/flutter-desktop-embedding)|Examples of using, and testbed for, the in-development Flutter for Desktop|
 
+### 自定义
+| 文章  | 说明  |
+|-------|-------|
+|[CustomAnimationFramework](https://github.com/azhengyongqin/CustomAnimationFramework)|Android自定义曲线路径动画框架|
+
