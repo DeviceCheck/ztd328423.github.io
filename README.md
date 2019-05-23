@@ -193,6 +193,7 @@
 |[DoraemonKit](https://github.com/didi/DoraemonKit)|android 简称 "DoKit" 。一款功能齐全的客户端（ iOS 、Android ）研发助手，你值得拥有|
 |[advanced-java](https://github.com/doocs/advanced-java)|😮 互联网 Java 工程师进阶知识完全扫盲|
 |[StarsAndClown](https://github.com/zhaoolee/StarsAndClown)|Github星聚弃疗榜, 让吃瓜群众也能享受Github带来的乐|
+|[HokoBlur](https://github.com/HokoFly/HokoBlur)|动态模糊效果|
 
 
 ### 点赞效果
