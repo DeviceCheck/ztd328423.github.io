@@ -170,6 +170,10 @@
 |[XUI](https://github.com/xuexiangjys/XUI)|个简洁而优雅的Android原生UI框架，解放你的双手|
 |[SwipeBack](https://github.com/liuguangqiang/SwipeBack)|android 侧拉返回 上拉返回等等|
 |[UI2018](https://github.com/zincPower/UI2018)|安卓高级UI代码整理和博客代码Demo|
+|[HokoBlur](https://github.com/HokoFly/HokoBlur)|动态模糊效果|
+|[FlowLayout](https://github.com/hongyangAndroid/FlowLayout)|Android流式布局，支持单选、多选等，适合用于产品标签等。|
+|[MDStudySamples](https://github.com/Mike-bel/MDStudySamples)|Android Material Design 材料设计风格的系统性学习案例|
+|[ZoomPreviewPicture](https://github.com/yangchaojiang/ZoomPreviewPicture)|拓展性极高类似微信图片和视频浏览,常见应用场景如微信朋友圈照片九宫格和微信聊天图片图片,视频,gif预览|
 
 
 ### 项目
@@ -193,10 +197,7 @@
 |[DoraemonKit](https://github.com/didi/DoraemonKit)|android 简称 "DoKit" 。一款功能齐全的客户端（ iOS 、Android ）研发助手，你值得拥有|
 |[advanced-java](https://github.com/doocs/advanced-java)|😮 互联网 Java 工程师进阶知识完全扫盲|
 |[StarsAndClown](https://github.com/zhaoolee/StarsAndClown)|Github星聚弃疗榜, 让吃瓜群众也能享受Github带来的乐|
-|[HokoBlur](https://github.com/HokoFly/HokoBlur)|动态模糊效果|
-|[FlowLayout](https://github.com/hongyangAndroid/FlowLayout)|Android流式布局，支持单选、多选等，适合用于产品标签等。|
-|[MDStudySamples](https://github.com/Mike-bel/MDStudySamples)|Android Material Design 材料设计风格的系统性学习案例|
-|[ZoomPreviewPicture](https://github.com/yangchaojiang/ZoomPreviewPicture)|拓展性极高类似微信图片和视频浏览,常见应用场景如微信朋友圈照片九宫格和微信聊天图片图片,视频,gif预览|
+|[RetrofitUtils](https://github.com/open-android/RetrofitUtils|retrofit网络工具类|
 
 
 ### 点赞效果
