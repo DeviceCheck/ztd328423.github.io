@@ -227,4 +227,5 @@
 |[flutter_study](https://github.com/luhenchang/flutter_study)|三天学会Flutter|
 |[flutter](https://github.com/flutter/flutter)|flutter 官方 demo|
 |[WanAndroid-Flutter](https://github.com/canhuah/WanAndroid-Flutter)|Flutter版本 WanAndroid客户端  适合Flutter入门学习|
+|[flutter-desktop-embedding](https://github.com/google/flutter-desktop-embedding)|Examples of using, and testbed for, the in-development Flutter for Desktop|
 
