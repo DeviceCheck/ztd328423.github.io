@@ -203,6 +203,7 @@
 |[StarsAndClown](https://github.com/zhaoolee/StarsAndClown)|Github星聚弃疗榜, 让吃瓜群众也能享受Github带来的乐|
 |[RetrofitUtils](https://github.com/open-android/RetrofitUtils|retrofit网络工具类|
 |[AVLoadingIndicatorView](https://github.com/81813780/AVLoadingIndicatorView|Android 加载动画|
+|[996 icu](https://github.com/996icu/996.ICU|Android 996 icu|
 
 ### 点赞效果
 | 文章  | 说明  |
