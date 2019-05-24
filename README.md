@@ -203,9 +203,10 @@
 |[DoraemonKit](https://github.com/didi/DoraemonKit)|android 简称 "DoKit" 。一款功能齐全的客户端（ iOS 、Android ）研发助手，你值得拥有|
 |[advanced-java](https://github.com/doocs/advanced-java)|😮 互联网 Java 工程师进阶知识完全扫盲|
 |[StarsAndClown](https://github.com/zhaoolee/StarsAndClown)|Github星聚弃疗榜, 让吃瓜群众也能享受Github带来的乐|
-|[RetrofitUtils](https://github.com/open-android/RetrofitUtils|retrofit网络工具类|
-|[AVLoadingIndicatorView](https://github.com/81813780/AVLoadingIndicatorView|Android 加载动画|
-|[996 icu](https://github.com/996icu/996.ICU|Android 996 icu|
+|[RetrofitUtils](https://github.com/open-android/RetrofitUtils)|retrofit网络工具类|
+|[AVLoadingIndicatorView](https://github.com/81813780/AVLoadingIndicatorView)|Android 加载动画|
+|[996 icu](https://github.com/996icu/996.ICU)|Android 996 icu|
+|[TextBannerView](https://github.com/ChessLuo/TextBannerView)|一个Android文字轮播控件，又名跑马灯；已经实现了可垂直跑、可水平跑的跑马灯，几行代码集成|
 
 ### 点赞效果
 | 文章  | 说明  |
