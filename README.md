@@ -185,6 +185,7 @@
 |[SpliteBitmap](https://github.com/toly1994328/SpliteBitmap)|Android粒子篇之文字的粒子化运动|
 |[AndroidNote](https://github.com/linsir6/AndroidNote)|Android基础知识、Android进阶知识、Android自定义View相关、面试相关的知识|
 |[ImmersionBar](https://github.com/gyf-dev/ImmersionBar)|android 4.4以上沉浸式状态栏和沉浸式导航栏管理，适配横竖屏切换，包括状态栏字体颜色和导航栏图标颜色，适用于Activity、Fragment、DialogFragment、Dialog，PopupWindow，并且适配刘海屏，适配软键盘弹出等问题，一句代码轻松实现，以及对bar的其他设置|
+|[Sound](https://github.com/toly1994328/Sound)|Android 声音测试|
 
 ### 项目
 | 名称  | 说明  |
