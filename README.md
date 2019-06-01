@@ -246,4 +246,3 @@
 | 文章  | 说明  |
 |-------|-------|
 |[RTCStartupDemo](https://github.com/Jhuster/RTCStartupDemo)|一款极其简单的 WebRTC 入门项目 go语言开发 建立一个互联网浏览器间的实时通信的平台|
-|[Mater design](https://guides.codepath.com/android/Design-Support-Library)|Components|
