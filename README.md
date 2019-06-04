@@ -248,6 +248,7 @@
 |-------|-------|
 |[CustomAnimationFramework](https://github.com/azhengyongqin/CustomAnimationFramework)|Android自定义曲线路径动画框架|
 |[PathLayoutManager](https://github.com/wuyr/PathLayoutManager)|RecyclerView的LayoutManager，轻松实现各种炫酷、特殊效果，再也不怕产品经理为难！|
+|[MeiWidgetView](https://github.com/HpWens/MeiWidgetView)|一款汇总了郭霖，鸿洋，以及自己平时收集的自定义控件集合库（小红书）|
 
 ### GO
 | 文章  | 说明  |
