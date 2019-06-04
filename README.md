@@ -186,6 +186,7 @@
 |[AndroidNote](https://github.com/linsir6/AndroidNote)|Android基础知识、Android进阶知识、Android自定义View相关、面试相关的知识|
 |[ImmersionBar](https://github.com/gyf-dev/ImmersionBar)|android 4.4以上沉浸式状态栏和沉浸式导航栏管理，适配横竖屏切换，包括状态栏字体颜色和导航栏图标颜色，适用于Activity、Fragment、DialogFragment、Dialog，PopupWindow，并且适配刘海屏，适配软键盘弹出等问题，一句代码轻松实现，以及对bar的其他设置|
 |[Sound](https://github.com/toly1994328/Sound)|Android 声音测试|
+|[jsoup](https://github.com/open-android/jsoup)|Android jsoup 是一款 Java 的HTML 解析器，可通过DOM，CSS选择器以及类似于JQuery的操作方法来提取和操作Html文档数据|
 
 ### 项目
 | 名称  | 说明  |
