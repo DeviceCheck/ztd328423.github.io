@@ -188,6 +188,7 @@
 |[Sound](https://github.com/toly1994328/Sound)|Android 声音测试|
 |[jsoup](https://github.com/open-android/jsoup)|Android jsoup 是一款 Java 的HTML 解析器，可通过DOM，CSS选择器以及类似于JQuery的操作方法来提取和操作Html文档数据|
 |[VideoRecorder](https://github.com/qdrzwd/VideoRecorder)|android视频录制，模仿微视，支持按下录制、抬起暂停。进度条断点显示。|
+|[AndroidKeepAlive](https://github.com/zywudev/AndroidKeepAlive)|Android 8.0 保活实践|
 
 ### 项目
 | 名称  | 说明  |
