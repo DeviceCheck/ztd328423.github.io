@@ -189,6 +189,9 @@
 |[jsoup](https://github.com/open-android/jsoup)|Android jsoup 是一款 Java 的HTML 解析器，可通过DOM，CSS选择器以及类似于JQuery的操作方法来提取和操作Html文档数据|
 |[VideoRecorder](https://github.com/qdrzwd/VideoRecorder)|android视频录制，模仿微视，支持按下录制、抬起暂停。进度条断点显示。|
 |[AndroidKeepAlive](https://github.com/zywudev/AndroidKeepAlive)|Android 8.0 保活实践|
+|[Diooto](https://github.com/moyokoo/Diooto)|微博,微信图库效果,微信视频拖放效果,适配状态栏 、屏幕旋转 、全屏 、长图、GIF、视频|
+
+### 项目
 
 ### 项目
 | 名称  | 说明  |
