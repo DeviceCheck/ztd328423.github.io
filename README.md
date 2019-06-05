@@ -191,6 +191,8 @@
 |[AndroidKeepAlive](https://github.com/zywudev/AndroidKeepAlive)|Android 8.0 保活实践|
 |[Diooto](https://github.com/moyokoo/Diooto)|微博,微信图库效果,微信视频拖放效果,适配状态栏 、屏幕旋转 、全屏 、长图、GIF、视频|
 |[RealtimeBlurView](https://github.com/mmin18/RealtimeBlurView)|android 高斯模糊|
+|[Ghost](https://github.com/GeekGhost/Ghost)|微影，一款纯粹的在线视频App，基于Material Design + MVP + RxJava + Retrofit + Realm + Glide|
+
 
 ### 项目
 
