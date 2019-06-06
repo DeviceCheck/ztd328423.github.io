@@ -204,6 +204,7 @@
 |[Android-RecyclerViewHelper](https://github.com/jeanboydev/Android-RecyclerViewHelper)|RecyclerView的工具类，更方便的实现Adapter，item点击事件，更快的实现加载提示，分页加载|
 |[tinkerpatch-sample](https://github.com/TinkerPatch/tinkerpatch-sample)|android 已经改造完自身App的Application的应用的参考Sample|
 |[AndroidModulePattern](https://github.com/guiying712/AndroidModulePattern)|Android项目组件化示例代码，支持Fragment和View|
+|[Material-Animations](https://github.com/lgvalle/Material-Animations)|Android 交互动画 material design|
 
 
 ### 项目
