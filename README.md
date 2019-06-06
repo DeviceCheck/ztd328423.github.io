@@ -203,6 +203,7 @@
 |[SwipeDelMenuLayout](https://github.com/mcxtzhang/SwipeDelMenuLayout)|史上最简单侧滑菜单，0耦合，支持任意ViewGroup。一步集成侧滑(删除)菜单，高仿QQ、IOS。|
 |[Android-RecyclerViewHelper](https://github.com/jeanboydev/Android-RecyclerViewHelper)|RecyclerView的工具类，更方便的实现Adapter，item点击事件，更快的实现加载提示，分页加载|
 |[tinkerpatch-sample](https://github.com/TinkerPatch/tinkerpatch-sample)|android 已经改造完自身App的Application的应用的参考Sample|
+|[AndroidModulePattern](https://github.com/guiying712/AndroidModulePattern)|Android项目组件化示例代码，支持Fragment和View|
 
 
 ### 项目
