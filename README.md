@@ -205,6 +205,7 @@
 |[tinkerpatch-sample](https://github.com/TinkerPatch/tinkerpatch-sample)|android 已经改造完自身App的Application的应用的参考Sample|
 |[AndroidModulePattern](https://github.com/guiying712/AndroidModulePattern)|Android项目组件化示例代码，支持Fragment和View|
 |[Material-Animations](https://github.com/lgvalle/Material-Animations)|Android 交互动画 material design|
+|[WaveLoading](https://github.com/race604/WaveLoading)|Android 水波纹动画|
 
 
 ### 项目
