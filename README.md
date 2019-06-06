@@ -222,6 +222,7 @@
 |[Backboard](https://github.com/tumblr/Backboard)|Android动画框架|
 |[Grav](https://github.com/glomadrian/Grav)|Android动画驱动 粒子动画相关|
 |[WSLiveDemo](https://github.com/WangShuo1143368701/WSLiveDemo)|音视频，直播SDK，rtmp推流，录制视频，滤镜。百万用户，线上迭代半年，已经稳定|
+|[WeYueReader](https://github.com/LiangLuDev/WeYueReader)|Android开源项目-微Yue电子书阅读（MD设计）|
 
 
 ### 工具类
