@@ -200,6 +200,7 @@
 |[SwipeBackHelper](https://github.com/Jude95/SwipeBackHelper)|返回关闭 Activity|
 |[MentionEditText](https://github.com/luckyandyzhang/MentionEditText)|android 仿微博话题功能|
 |[EasySports](https://github.com/hongyangAndroid/EasySports)|android 一款资讯类应用|
+|[SwipeDelMenuLayout](https://github.com/mcxtzhang/SwipeDelMenuLayout)|史上最简单侧滑菜单，0耦合，支持任意ViewGroup。一步集成侧滑(删除)菜单，高仿QQ、IOS。|
 
 ### 项目
 
