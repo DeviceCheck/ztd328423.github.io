@@ -198,6 +198,7 @@
 |[LQRWeChat](https://github.com/GitLqr/LQRWeChat)|本项目仿最新版微信6.5.7（除图片选择器外），基于融云SDK，使用目前较火的 Rxjava+Retrofit+MVP+Glide 技术开发。相比上个版本，加入发送位置消息，红包消息等功能。|
 |[PinchZoomTextView](https://github.com/androidessence/PinchZoomTextView)|随着手势滑动 缩放的TextView|
 |[SwipeBackHelper](https://github.com/Jude95/SwipeBackHelper)|返回关闭 Activity|
+|[MentionEditText](https://github.com/luckyandyzhang/MentionEditText)|android 仿微博话题功能|
 
 ### 项目
 
