@@ -220,6 +220,7 @@
 |[JavaGuide](https://github.com/Snailclimb/JavaGuide)|【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。 https://gitee.com/SnailClimb/JavaGuide|
 |[Backboard](https://github.com/tumblr/Backboard)|Android动画框架|
 |[Grav](https://github.com/glomadrian/Grav)|Android动画驱动 粒子动画相关|
+|[WSLiveDemo](https://github.com/WangShuo1143368701/WSLiveDemo)|音视频，直播SDK，rtmp推流，录制视频，滤镜。百万用户，线上迭代半年，已经稳定|
 
 
 ### 工具类
