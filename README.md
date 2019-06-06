@@ -199,6 +199,7 @@
 |[PinchZoomTextView](https://github.com/androidessence/PinchZoomTextView)|随着手势滑动 缩放的TextView|
 |[SwipeBackHelper](https://github.com/Jude95/SwipeBackHelper)|返回关闭 Activity|
 |[MentionEditText](https://github.com/luckyandyzhang/MentionEditText)|android 仿微博话题功能|
+|[EasySports](https://github.com/hongyangAndroid/EasySports)|android 一款资讯类应用|
 
 ### 项目
 
