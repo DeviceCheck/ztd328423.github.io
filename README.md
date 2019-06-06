@@ -195,6 +195,8 @@
 |[HeaderAndFooterRecyclerView](https://github.com/cundong/HeaderAndFooterRecyclerView)|android A RecyclerView solution, support addHeaderView、addFooterView|
 |[LiveTest](https://github.com/SiKang123/LiveTest)|android 直播实现|
 |[jjdxm_ijkplayer](https://github.com/lingcimi/jjdxm_ijkplayer)|基于ijkplayer简单的UI界面 当前项目是基于ijkplayer项目进行的播放器界面UI封装。 是一个适用于 Android 的 RTMP 播放界面 SDK，可高度定制化和二次开发。特色是同时支持 H.264 软编／硬编和 AAC 软编／硬编。主要是支持RIMP、HLS、MP4、M4A等视频格式的播放|
+|[LQRWeChat](https://github.com/GitLqr/LQRWeChat)|本项目仿最新版微信6.5.7（除图片选择器外），基于融云SDK，使用目前较火的 Rxjava+Retrofit+MVP+Glide 技术开发。相比上个版本，加入发送位置消息，红包消息等功能。
+|
 
 ### 项目
 
