@@ -206,6 +206,7 @@
 |[AndroidModulePattern](https://github.com/guiying712/AndroidModulePattern)|Android项目组件化示例代码，支持Fragment和View|
 |[Material-Animations](https://github.com/lgvalle/Material-Animations)|Android 交互动画 material design|
 |[WaveLoading](https://github.com/race604/WaveLoading)|Android 水波纹动画|
+|[PictureSelector](https://github.com/LuckSiege/PictureSelector)|Android  多图片选择器|
 
 
 ### 项目
