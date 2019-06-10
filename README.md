@@ -211,6 +211,7 @@
 |[and_swipeback](https://github.com/XBeats/and_swipeback)|Android 高仿最新版微信6.2手势滑动返回|
 |[mp-android-chart](https://github.com/zhuanghongji/mp-android-chart)|Android MPAndroidChart是一个非常强大的、容易使用的图表库|
 |[Android-PickerView](https://github.com/Bigkoo/Android-PickerView)|Android 时间选择器、省市区三级联动|
+|[MyTikTok](https://github.com/dongmin2002345/MyTikTok)|Android 模仿抖音 app|
 
 
 ### 项目
