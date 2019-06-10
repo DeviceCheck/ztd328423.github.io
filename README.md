@@ -208,6 +208,7 @@
 |[WaveLoading](https://github.com/race604/WaveLoading)|Android 水波纹动画|
 |[PictureSelector](https://github.com/LuckSiege/PictureSelector)|Android  多图片选择器|
 |[tablayout-android](https://github.com/auv1107/tablayout-android)|Android 修改 support 包 TabLayout，实现新浪微博/即刻 APP 蚯蚓导航效果|
+|[and_swipeback](https://github.com/XBeats/and_swipeback)|Android 高仿最新版微信6.2手势滑动返回|
 
 
 ### 项目
