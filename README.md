@@ -240,6 +240,7 @@
 |[Jetpack-MVVM-Best-Practice](https://github.com/KunMinX)|是 难得一见 的 Jetpack MVVM 最佳实践！在 蕴繁于简 的代码中，对 视图控制器 乃至 标准化开发模式 形成正确、深入的理解！|
 |[3dTagCloudAndroid](https://github.com/misakuo)|3dTagCloudAndroid TagCloudView是一个基于ViewGroup实现的控件，支持将一组View展示为一个3D球形集合，并支持全方向滚动。|
 |[Nice-Knowledge-System](https://github.com/maoqitian/Nice-Knowledge-System)|个人成长知识体系总结与分享，每天进步一点点，Passion，Self-regulation，Love and Share https://www.maoqitian.com|
+|[RxFFmpeg](https://github.com/microshow)|RxFFmpeg 是基于 ( FFmpeg 4.0 + X264 + mp3lame + fdk-aac ) 编译的适用于 Android 平台的音视频编辑、视频剪辑的快速处理框架，包含以下功能（视频拼接，转码，压缩，裁剪，片头片尾，分离音视频，变速，添加静态贴纸和gif动态贴纸，添加字幕，添加滤镜，添加背景音乐，加速减速视频，倒放音视频，音频裁剪，变声，混音，图片合成视频，视频解码图片等…|
 
 
 ### 工具类
