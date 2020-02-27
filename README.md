@@ -213,6 +213,7 @@
 |[MyTikTok](https://github.com/dongmin2002345/MyTikTok)|Android 模仿抖音 app|
 |[flexbox-layout](https://github.com/google/flexbox-layout)|Flexbox for Android|
 |[EasyBehavior](https://github.com/JmStefanAndroid/EasyBehavior)|一个可以上拉下滑的Ui效果|
+|[chart.xkcd](https://github.com/timqian/chart.xkcd)|js 手绘图表|
 
 ### 项目
 
