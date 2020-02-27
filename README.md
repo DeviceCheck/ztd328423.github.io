@@ -234,6 +234,7 @@
 |[WSLiveDemo](https://github.com/WangShuo1143368701/WSLiveDemo)|音视频，直播SDK，rtmp推流，录制视频，滤镜。百万用户，线上迭代半年，已经稳定|
 |[WeYueReader](https://github.com/LiangLuDev/WeYueReader)|Android开源项目-微Yue电子书阅读（MD设计）|
 |[ImagePicker](https://github.com/jeasonlzy)|Android地址选择器|
+|[Jetpack-MVVM-Best-Practice](https://github.com/KunMinX)|是 难得一见 的 Jetpack MVVM 最佳实践！在 蕴繁于简 的代码中，对 视图控制器 乃至 标准化开发模式 形成正确、深入的理解！|
 
 
 ### 工具类
