@@ -4,6 +4,7 @@
 | 类库  | 应用架构|
 |-------|---------|
 |[Android Android-Review](https://github.com/JasonWu1111/Android-Review)|Android 复习资料汇总|
+|[Android me-note](https://github.com/Strugglingworm/me_note)|Android 日记|
 
 
 ### 企业
