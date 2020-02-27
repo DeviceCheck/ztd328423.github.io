@@ -34,7 +34,7 @@
 |[shape样式](http://keeganlee.me/post/android/20150830)|Android shape|
 |[数据采集与埋点](https://sensorsdata.cn/manual/)|Android数据分析|
 |[Android常用Manager](https://gold.xitu.io/entry/5752c346df0eea00644e98d9)|Android Manager|
-|[Android 面试](https://www.diycode.cc/wiki/androidinterview)|面试指南|
+|[Android 面试](https://github.com/Moosphan)|面试指南|
 |[2017年初你绝对想尝试的25个新安卓库](http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2017/0216/7122.html)|安卓库|
 |[图标选择](http://www.iconfont.cn/)|图标|
 |[制作字体](https://icomoon.io/)|字体|
