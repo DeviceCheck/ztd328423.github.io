@@ -5,10 +5,6 @@
 |-------|---------|
 |应用架构采用 [clean 架构](http://fernandocejas.com/2014/09/03/architecting-android-the-clean-way/)|官方介绍|
 |Google 提供的 Android 架构 [MVP+Clean](https://github.com/googlesamples/android-architecture/tree/todo-mvp-clean)|github|
-
-## Master design components
-| Components | 组件 |
-|-------|---------|
 |[Mater design](https://guides.codepath.com/android/Design-Support-Library)|Components|
 
 ### 企业
@@ -19,6 +15,7 @@
 |[segmentFault](https://gold.xitu.io/entry/5752c346df0eea00644e98d9)|Android segmentFault|
 |[Android github](https://github.com/android)|Android Github|
 |[Android SVGAPlayer-Android](https://github.com/yyued)|Android SVGAPlayer-Android|
+|[Android GSYVideoPlayer](https://github.com/CarGuo)|Android GSYVideoPlayer|
 
 ### 博客文章
 | 文章  | 说明  |
