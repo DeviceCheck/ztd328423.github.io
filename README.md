@@ -11,6 +11,7 @@
 ### 企业
 | 类库 |  类库说明  |
 |-------|------|
+|[MobileIMSDK](https://github.com/JackJiang2011/MobileIMSDK)|一个专为移动端开发的原创即时通讯框架，超轻量级、高度提炼，完全基于UDP协议，支持iOS、Android、标准Java平台，服务端基于Mina和Netty编写|
 |[signal-android](https://github.com/signalapp)|即时通讯|
 |[facebook](https://github.com/facebook)|facebook|
 |[美团点评技术团队](http://tech.meituan.com/)|美团|
