@@ -54,6 +54,7 @@
 ### 第三方库
 | 类库  | 类库说明|
 |-------|---------|
+|[Android SKU](https://github.com/madreain/SKU)|Android仿淘宝、京东商品选择器|
 |[leakcanary](https://github.com/square/leakcanary)|检查内存泄露的工具|
 |[compile "com.google.guava:guava:20.0"](https://github.com/google/guava) | Guava 库|
 |[compile "com.jakewharton:butterknife:8.4.0" ; "com.jakewharton:butterknife-compiler:8.4.0"](https://github.com/JakeWharton/butterknife)|注解,获取视图控件的ID，可以简化代码|
