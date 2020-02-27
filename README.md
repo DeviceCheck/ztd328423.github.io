@@ -242,6 +242,7 @@
 |[Nice-Knowledge-System](https://github.com/maoqitian/Nice-Knowledge-System)|个人成长知识体系总结与分享，每天进步一点点，Passion，Self-regulation，Love and Share https://www.maoqitian.com|
 |[RxFFmpeg](https://github.com/microshow)|RxFFmpeg 是基于 ( FFmpeg 4.0 + X264 + mp3lame + fdk-aac ) 编译的适用于 Android 平台的音视频编辑、视频剪辑的快速处理框架，包含以下功能（视频拼接，转码，压缩，裁剪，片头片尾，分离音视频，变速，添加静态贴纸和gif动态贴纸，添加字幕，添加滤镜，添加背景音乐，加速减速视频，倒放音视频，音频裁剪，变声，混音，图片合成视频，视频解码图片等…|
 |[YImagePicker](https://github.com/yangpeixing)|小红书多图剪裁+微信图片选择器+大图预览+图片剪裁(支持圆形剪裁和镂空剪裁)，已适配androidQ,借鉴并升级matisse加载内核!超强定制性可轻松实现知乎/马蜂窝/微博等特殊样式!支持跨进程回调!内部结构轻量级，无任何第三方开源库！支持support依赖！|
+|[AndroidAnimationExercise](https://github.com/REBOOTERS)|Android 动画各种实现，包括帧动画、补间动画和属性动画的总结分享|
 
 
 ### 工具类
