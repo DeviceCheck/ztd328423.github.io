@@ -19,6 +19,7 @@
 |[Android WeChatExtension-ForMac](https://github.com/MustangYM)|Mac版微信的功能拓展|
 |[Android Tencent](https://github.com/Tencent)|腾讯|
 |[Android 专注于Android](https://github.com/DuGuQiuBai)|专注于Android|
+|[Android alibaba](https://github.com/alibaba?page=2)|阿里巴巴|
 
 ### 博客文章
 | 文章  | 说明  |
