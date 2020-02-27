@@ -30,6 +30,7 @@
 ### 博客文章
 | 文章  | 说明  |
 |-------|-------|
+|[android ble](https://github.com/aicareles)|AndroidBLE蓝牙框架，包括扫描、连接、设置通知、发送数据、读取、接收数据和OTA升级以及各种直观的回调，近乎一行代码植入项目，可扩展配置蓝牙相关操作。|
 |[android 一个帮助您完成从缩略图到原图无缝过渡转变的神奇组件](https://github.com/Hitomis)|android 一个帮助您完成从缩略图到原图无缝过渡转变的神奇组件|
 |[ADB命令大全](https://github.com/mzlogin)|android adb|
 |[Android知识梳理](https://gold.xitu.io/post/587dbaf9570c3522010e400e)|android基本知识|
