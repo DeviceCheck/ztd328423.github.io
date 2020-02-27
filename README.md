@@ -59,7 +59,7 @@
 ### 第三方库
 | 类库  | 类库说明|
 |-------|---------|
-|[Android okhttp-RxHttp](https://github.com/liujingxing/okhttp-RxHttp)|RxJava2 + OkHttp 30秒上手，新一代OkHttp请求神器，史上最优雅的实现文件上传/下载/进度监听、动态/多域名、缓存；支持第三方数据解析工具、自定义请求、自动关闭请求等等 https://juejin.im/post/5ded221a518825…|
+|[Android okhttp-RxHttp](https://github.com/liujingxing/okhttp-RxHttp)|RxJava2 + OkHttp 30秒上手，新一代OkHttp请求神器，史上最优雅的实现文件上传/下载/进度监听、动态/多域名、缓存；支持第三方数据解析工具、自定义请求、自动关闭请求等等|
 |[Android SKU](https://github.com/madreain/SKU)|Android仿淘宝、京东商品选择器|
 |[leakcanary](https://github.com/square/leakcanary)|检查内存泄露的工具|
 |[compile "com.google.guava:guava:20.0"](https://github.com/google/guava) | Guava 库|
