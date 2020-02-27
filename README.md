@@ -220,12 +220,7 @@
 |[EasyBehavior](https://github.com/JmStefanAndroid/EasyBehavior)|一个可以上拉下滑的Ui效果|
 |[chart.xkcd](https://github.com/timqian/chart.xkcd)|js 手绘图表|
 |[HelloGithub](https://github.com/521xueweihan)|Find pearls on open-source seashore 分享 GitHub 上有趣、入门级的开源项目|
-
-### 项目
-
-### 项目
-| 名称  | 说明  |
-|-------|-------|
+|[android实现八大行星绕太阳3D旋转效果](https://github.com/glongdev/Demos)|android实现八大行星绕太阳3D旋转效果|
 |[NewFastFrame](https://github.com/HelloChenJinJun/NewFastFrame)|终极组件化框架项目方案(该项目目前集成现在主流的开发框架和技术，包括okhttp3、rxjava2、retrofit2、glide、greendao3.0、dagger2、mvp、md风格、热修复tinker,bugly和组件化等。采用组件化开发框架，可以使模块单独编译调试，可以有效地减少编译的时间，更好地进行并发开发，从而极大的提高了并行开发效率。)|
 |[ListenerMusicPlayer](https://github.com/hefuyicoder/ListenerMusicPlayer)|一款优雅的遵循 Material Design 的开源音乐播放器，UI参考 腾讯轻听 音乐播放器,使用 Lastfm Api 与 酷狗歌词Api。项目架构采用 mvp-clean，基于 Retrofit2 + Dagger2 + Rxjava + RxBus + Glide。|
 |[MvpApp](https://github.com/Rukey7/MvpApp)|练习MVP架构开发的App，算是对自己学过的知识做一个总结，做了有一段时间，界面比较多，代码量还是有的，里面做了大量封装，整体代码整理得很干净，这个我已经尽力整理了- -。|
@@ -262,16 +257,8 @@
 |[996 icu](https://github.com/996icu/996.ICU)|Android 996 icu|
 |[RxTool](https://github.com/vondear/RxTool)|Android开发人员不得不收集的工具类集合 | 支付宝支付 | 微信支付（统一下单） | 微信分享 | Zip4j压缩（支持分卷压缩与加密） | 一键集成UCrop选择圆形头像 | 一键集成二维码和条形码的扫描与生成 | 常用Dialog | WebView的封装可播放视频 | 仿斗鱼滑动验证码 | Toast封装 | 震动 | GPS | Location定位 | 图片缩放 | Exif 图片添加地理位置信息（经纬度） | 蛛网等级 | 颜色选择器 | ArcGis | VTPK | 编译运行一下说不定会找到惊喜|
 |[TextBannerView](https://github.com/ChessLuo/TextBannerView)|一个Android文字轮播控件，又名跑马灯；已经实现了可垂直跑、可水平跑的跑马灯，几行代码集成|
-
-### 点赞效果
-| 文章  | 说明  |
-|-------|-------|
 |[SparkButton](https://github.com/varunest/SparkButton)|Android 点赞效果|
 |[SmartRefreshLayout](https://github.com/scwang90/SmartRefreshLayout)|下拉刷新、上拉加载、二级刷新、淘宝二楼、RefreshLayout、OverScroll，Android智能下拉刷新框架，支持越界回弹、越界拖动，具有极强的扩展性，集成了几十种炫酷的Header和 Footer|
-
-### 动画
-| 文章  | 说明  |
-|-------|-------|
 |[android-ConstraintLayoutExamples](https://github.com/googlesamples/android-ConstraintLayoutExamples)|Android google 动画效果|
 
 ### Flutter
