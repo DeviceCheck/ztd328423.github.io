@@ -18,6 +18,7 @@
 |[CSDN](http://www.csdn.net/tag/%E7%A7%BB%E5%8A%A8%E5%BC%80%E5%8F%91/news)|Android CSDN|
 |[segmentFault](https://gold.xitu.io/entry/5752c346df0eea00644e98d9)|Android segmentFault|
 |[Android github](https://github.com/android)|Android Github|
+|[Android SVGAPlayer-Android](https://github.com/yyued)|Android SVGAPlayer-Android|
 
 ### 博客文章
 | 文章  | 说明  |
