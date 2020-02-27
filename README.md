@@ -16,6 +16,7 @@
 |[Android github](https://github.com/android)|Android Github|
 |[Android SVGAPlayer-Android](https://github.com/yyued)|Android SVGAPlayer-Android|
 |[Android GSYVideoPlayer](https://github.com/CarGuo)|Android GSYVideoPlayer|
+|[Android WeChatExtension-ForMac](https://github.com/MustangYM)|Mac版微信的功能拓展|
 
 ### 博客文章
 | 文章  | 说明  |
