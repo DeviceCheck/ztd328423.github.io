@@ -25,6 +25,7 @@
 ### 博客文章
 | 文章  | 说明  |
 |-------|-------|
+|[android 一个帮助您完成从缩略图到原图无缝过渡转变的神奇组件](https://github.com/Hitomis)|android 一个帮助您完成从缩略图到原图无缝过渡转变的神奇组件|
 |[ADB命令大全](https://github.com/mzlogin)|android adb|
 |[Android知识梳理](https://gold.xitu.io/post/587dbaf9570c3522010e400e)|android基本知识|
 |[2016 Top 10 Android Library](https://gold.xitu.io/post/587d83d4570c3522010c71b8)|优秀的安卓库|
