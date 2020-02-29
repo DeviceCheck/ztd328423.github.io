@@ -11,6 +11,7 @@
 |[AndroidLibs](https://github.com/XXApple)|正在成为史上最全分类 Android 开源大全|
 |[技术博客笔记大汇总](https://github.com/yangchong211)|android 有很多不错的案例|
 |[像 IDE 一样使用 vim](https://github.com/yangyangwithgnu)|android vim 必知会|
+|[android JakeWharton](https://github.com/JakeWharton)|android JakeWharton|
 
 
 ### 企业
