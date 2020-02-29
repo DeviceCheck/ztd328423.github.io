@@ -10,6 +10,7 @@
 |[Android CyC2018](https://github.com/CyC2018)|技术面试必备基础知识、Leetcode、计算机操作系统、计算机网络、系统设计、Java、Python、C++|
 |[AndroidLibs](https://github.com/XXApple)|正在成为史上最全分类 Android 开源大全|
 |[技术博客笔记大汇总](https://github.com/yangchong211)|android 有很多不错的案例|
+|[像 IDE 一样使用 vim](https://github.com/yangyangwithgnu)|android vim 必知会|
 
 
 ### 企业
