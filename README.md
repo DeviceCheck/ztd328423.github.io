@@ -43,6 +43,7 @@
 ### 博客文章
 | 文章  | 说明  |
 |-------|-------|
+|[android RecyclerViewItemAnimators](https://github.com/gabrielemariotti/RecyclerViewItemAnimators)|Android  RecyclerViewItemAnimators|
 |[android QQPresentation](https://github.com/chenchengyin/QQPresentation)|Android  仿QQ个人资料页气泡标签展示|
 |[android AmountView](https://github.com/TendaZ/AmountView)|Android  自定义组件：购买数量，带减少增加按钮|
 |[android AndroidAutoSize](https://github.com/JessYanCoding)|Android 今日头条屏幕适配方案终极版，一个极低成本的 Android 屏幕适配方案|
