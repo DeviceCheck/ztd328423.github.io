@@ -45,6 +45,7 @@
 ### 博客文章
 | 文章  | 说明  |
 |-------|-------|
+|[android 下滑返回](https://github.com/klinker41)|Android 滑动返回|
 |[android easy-mock](https://github.com/easy-mock)|Android Easy Mock 是一个可视化，并且能快速生成模拟数据的持久化服务。|
 |[android MDStudySamples](https://github.com/Mike-bel)|Android MDStudySamples|
 |[android RecyclerViewItemAnimators](https://github.com/gabrielemariotti/RecyclerViewItemAnimators)|Android  RecyclerViewItemAnimators|
