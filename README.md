@@ -14,6 +14,7 @@
 ### 企业
 | 类库 |  类库说明  |
 |-------|------|
+|[携程](https://github.com/ctripcorp)|C-OCR是携程自研的OCR项目，主要包括身份证、护照、火车票、签证等旅游相关证件、材料的识别。 项目包含4个部分，拒识、检测、识别、后处理。|
 |[Qihoo 360](https://github.com/Qihoo360)|android 360|
 |[MobileIMSDK](https://github.com/JackJiang2011/MobileIMSDK)|一个专为移动端开发的原创即时通讯框架，超轻量级、高度提炼，完全基于UDP协议，支持iOS、Android、标准Java平台，服务端基于Mina和Netty编写|
 |[signal-android](https://github.com/signalapp)|即时通讯|
