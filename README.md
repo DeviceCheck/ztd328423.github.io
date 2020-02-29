@@ -39,6 +39,7 @@
 ### 博客文章
 | 文章  | 说明  |
 |-------|-------|
+|[android YCShopDetailLayout](https://github.com/yangchong211/YCShopDetailLayout)|购物商场商品详情页面自定义控件，模仿淘宝、京东、考拉等商品详情页分页加载的UI效果。可以嵌套RecyclerView、WebView、ViewPager、ScrollView等等。支持设置上拉分页加载动画|
 |[android 数字翻页动画](https://github.com/xenione/tab-digit)|Android tab-digt|
 |[android 动画百分比](https://github.com/RamiJ3mli/PercentageChartView)|Android 百分比|
 |[android 动画](https://github.com/ToDou)|刷新 kotlin  shadow 下滑放大 卡片滑动效果|
