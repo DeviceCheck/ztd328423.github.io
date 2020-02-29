@@ -42,6 +42,7 @@
 ### 博客文章
 | 文章  | 说明  |
 |-------|-------|
+|[android SwipeBackLayout](https://github.com/ikew0ng/SwipeBackLayout)|Android 页面返回|
 |[android MD360Player4Android](https://github.com/ashqal/MD360Player4Android)|Android 360 VR|
 |[android Android-SpinKit](https://github.com/ybq/Android-SpinKit)|Android 动画|
 |[android MagicCamera](https://github.com/wuhaoyu1990/MagicCamera)|Android 包含美颜等40余种实时滤镜相机，可拍照、录像、图片修改|
