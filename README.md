@@ -50,6 +50,7 @@
 ### 博客文章
 | 文章  | 说明  |
 |-------|-------|
+|[android 弹幕 视频播放器](https://github.com/hpdx)|Android上专为视频直播打造的轻量级弹幕库 基于ijkPlayer的Android视频播放器|
 |[android overscroll-decor](https://github.com/EverythingMe/overscroll-decor)|android 下拉回弹|
 |[android gongwen](https://github.com/gongwen)|Android 一个帮您快速实现跑马灯效果的library|
 |[android YoKeyword](https://github.com/YoKeyword)|Android ItemTouchHelper实现今日头条频道功能 轻松实现：选择城市，选择联系人等需要索引的功能|
