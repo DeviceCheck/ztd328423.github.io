@@ -49,6 +49,7 @@
 | 文章  | 说明  |
 |-------|-------|
 |[android gongwen](https://github.com/gongwen)|Android 一个帮您快速实现跑马灯效果的library|
+|[android YoKeyword](https://github.com/YoKeyword)|Android ItemTouchHelper实现今日头条频道功能 轻松实现：选择城市，选择联系人等需要索引的功能|
 |[android 下滑返回](https://github.com/klinker41)|Android 滑动返回|
 |[android easy-mock](https://github.com/easy-mock)|Android Easy Mock 是一个可视化，并且能快速生成模拟数据的持久化服务。|
 |[android MDStudySamples](https://github.com/Mike-bel)|Android MDStudySamples|
