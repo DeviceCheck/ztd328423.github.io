@@ -42,6 +42,7 @@
 ### 博客文章
 | 文章  | 说明  |
 |-------|-------|
+|[android MD360Player4Android](https://github.com/ashqal/MD360Player4Android)|Android 360 VR|
 |[android Android-SpinKit](https://github.com/ybq/Android-SpinKit)|Android 动画|
 |[android MagicCamera](https://github.com/wuhaoyu1990/MagicCamera)|Android 包含美颜等40余种实时滤镜相机，可拍照、录像、图片修改|
 |[android 知心app](https://github.com/ZSCDumin)|Android 知心App 1.0 版本 / 动态权限申请 / 图灵机器人 / 人脸识别登录 / 欧酷天气 / 网易新闻 / Bmob后端云数据库实现登录注册以及上传文件 / 蒲公英应用发布平台 / 安卓(Android)毕业设计|
