@@ -14,7 +14,7 @@
 |[android JakeWharton](https://github.com/JakeWharton)|android JakeWharton|
 |[android demo app](https://github.com/Trinea?tab=repositories)|android app demo|
 |[android UI](https://github.com/lyxwll)|Github上的UI效果收集|
-|[android venshine](https://github.com/venshine)|笔记 动画 点赞等|
+|[android venshine](https://github.com/venshine)|贝塞尔曲线 笔记 动画 点赞等|
 
 
 ### 企业
