@@ -16,6 +16,7 @@
 |[android UI](https://github.com/lyxwll)|Github上的UI效果收集|
 |[android venshine](https://github.com/venshine)|贝塞尔曲线 笔记 动画 点赞等|
 |[android open-android](https://github.com/open-android)|open-android|
+|[LoopRotarySwitch](https://github.com/dalong982242260)|android 3d旋转切换view，类似旋转木马效果。可以自动切换！|
 
 
 ### 企业
@@ -144,7 +145,6 @@
 |[LockTableView](https://github.com/RmondJone/LockTableView)|android 自定义表格|
 |[banner](https://github.com/youth5201314/banner)|android 图片轮播控件|
 |[ViewPagerCards](https://github.com/rubensousa/ViewPagerCards)|android 卡片滑动|
-|[LoopRotarySwitch](https://github.com/dalong982242260/LoopRotarySwitch)|android 3d旋转切换view，类似旋转木马效果。可以自动切换！|
 |[CoordinatorTabLayout](https://github.com/hugeterry/CoordinatorTabLayout)|android TabLayout和CoordinatorLayout相结合的折叠控件|
 |[InkeVerticalViewPagerLive](https://github.com/xingstarx/InkeVerticalViewPagerLive)|android 仿映客viewPager上下滑动切换直播|
 |[excelPanel](https://github.com/zhouchaoyuan/excelPanel)|android excel|
