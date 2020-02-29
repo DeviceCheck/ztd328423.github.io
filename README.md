@@ -12,6 +12,7 @@
 |[技术博客笔记大汇总](https://github.com/yangchong211)|android 有很多不错的案例|
 |[像 IDE 一样使用 vim](https://github.com/yangyangwithgnu)|android vim 必知会|
 |[android JakeWharton](https://github.com/JakeWharton)|android JakeWharton|
+|[android demo app](https://github.com/Trinea?tab=repositories)|android app demo|
 
 
 ### 企业
