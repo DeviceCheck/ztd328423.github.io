@@ -42,6 +42,7 @@
 ### 博客文章
 | 文章  | 说明  |
 |-------|-------|
+|[android AndroidAutoSize](https://github.com/JessYanCoding)|Android 今日头条屏幕适配方案终极版，一个极低成本的 Android 屏幕适配方案|
 |[android SwipeBackLayout](https://github.com/ikew0ng/SwipeBackLayout)|Android 页面返回|
 |[android MD360Player4Android](https://github.com/ashqal/MD360Player4Android)|Android 360 VR|
 |[android Android-SpinKit](https://github.com/ybq/Android-SpinKit)|Android 动画|
