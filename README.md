@@ -36,6 +36,7 @@
 ### 博客文章
 | 文章  | 说明  |
 |-------|-------|
+|[android 数字翻页动画](https://github.com/xenione/tab-digit)|Android tab-digt|
 |[android 动画百分比](https://github.com/RamiJ3mli/PercentageChartView)|Android 百分比|
 |[android 动画](https://github.com/ToDou)|刷新 kotlin  shadow 下滑放大 卡片滑动效果|
 |[android TanTanRippleView](https://github.com/hewking)|仿探探进入 扫描view|
