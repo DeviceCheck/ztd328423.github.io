@@ -42,6 +42,7 @@
 ### 博客文章
 | 文章  | 说明  |
 |-------|-------|
+|[android 知心app](https://github.com/ZSCDumin)|Android 知心App 1.0 版本 / 动态权限申请 / 图灵机器人 / 人脸识别登录 / 欧酷天气 / 网易新闻 / Bmob后端云数据库实现登录注册以及上传文件 / 蒲公英应用发布平台 / 安卓(Android)毕业设计|
 |[android android-shoppingcart](https://github.com/DickyQie/android-shoppingcart)|Android 购物车： 包含侧滑删除，商品筛选，商品增加和减少，价格计算，店铺分类等功能|
 |[android AutoLinkTextView](https://github.com/armcha/AutoLinkTextView)|Android AutoLinkTextView|
 |[android TimeLine](https://github.com/vivian8725118/TimeLine)|Android 时间轴|
