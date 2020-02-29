@@ -51,6 +51,7 @@
 ### 博客文章
 | 文章  | 说明  |
 |-------|-------|
+|[android PlusMenu](https://github.com/DuShuYuan/PlusMenu)|仿微博、酷安点击加号揭露动画弹出菜单+背景模糊效果|
 |[android JIMU](https://github.com/mqzhangw/JIMU)|一种简单有效的android组件化方案，支持组件的代码资源隔离、单独调试、集成调试、组件交互、UI跳转、 生命周期等完整功能|
 |[android 弹幕 视频播放器](https://github.com/hpdx)|Android上专为视频直播打造的轻量级弹幕库 基于ijkPlayer的Android视频播放器|
 |[android overscroll-decor](https://github.com/EverythingMe/overscroll-decor)|android 下拉回弹|
