@@ -51,6 +51,7 @@
 ### 博客文章
 | 文章  | 说明  |
 |-------|-------|
+|[android android-snowfall](https://github.com/JetradarMobile/android-snowfall)|Android 下雪控件|
 |[android SlideBack](https://github.com/ChenTianSaber/SlideBack)|Android 一个可以让你页面支持 滑动返回 的小东西|
 |[android 视频框架](https://github.com/lipangit/JiaoZiVideoPlayer)|Android 视频框架|
 |[android Rxlife](https://github.com/dhhAndroid/RxLifecycle)|Android 轻量级无侵入性的RxJava自动注销库|
