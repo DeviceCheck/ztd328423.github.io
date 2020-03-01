@@ -41,6 +41,7 @@
 |[Android alibaba](https://github.com/alibaba?page=2)|阿里巴巴|
 |[Android toutiaoIO](https://github.com/toutiaoio)|今日头条|
 |[Android 郭霖](https://github.com/guolindev)|郭霖|
+|[Android iReaderAndroid](https://github.com/iReaderAndroid)| ZeusPlugin成熟易懂的Android插件补丁框架（可直接商业化的项目，日活千万级项目多年使用验证稳定） |
 |[Android google](https://github.com/google)|google|
 |[Android ImmortalZ](https://github.com/ImmortalZ)| 3D立体无限旋转容器 顶部切换栏，且添加滑动到左右边缘回弹效果 雷达 动画|
 |[Android kotlin](https://github.com/Kotlin)|Kotlin|
