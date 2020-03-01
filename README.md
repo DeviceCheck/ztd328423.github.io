@@ -19,6 +19,7 @@
 |[LoopRotarySwitch](https://github.com/dalong982242260)|android 3d旋转切换view，类似旋转木马效果。可以自动切换！|
 |[android Google Android官方培训课程中文版](https://github.com/pedant)|Google Android官方培训课程中文版|
 |[android 系统架构文档](https://github.com/sucese)|Google 系统架构文档|
+|[android Ericsongyl](https://github.com/Ericsongyl)|AOSF：全称为Android Open Source Framework，即Android优秀开源框架汇总。包含：网络请求okhttp，图片下载glide，数据库greenDAO，链式框架RxJava，组件路由ARouter，消息传递通信EventBus，热更新Tinker，插件化框架Replugin，文件下载FileDownloaer，图片选择PhotoPicker，图片滤镜/毛玻璃等特…|
 
 
 ### 企业
