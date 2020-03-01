@@ -56,6 +56,7 @@
 ### 博客文章
 | 文章  | 说明  |
 |-------|-------|
+|[android android-gif-drawable](https://github.com/koral--/android-gif-drawable)|Android 加载gif动画|
 |[android Eyepetizer-in-Kotlin](https://github.com/LRH1993/Eyepetizer-in-Kotlin)|Android 使用Kotlin撸一款Eyepetizer，学习Kotlin语言|
 |[android TriangleLabelView](https://github.com/shts/TriangleLabelView)|Android 图片上下左右 三角形标记|
 |[android Moosphan](https://github.com/Moosphan)|Android 每工作日更新一道 Android 面试题，小聚成河，大聚成江，共勉之～ 基于ExpandableListView实现评论和回复的功能|
