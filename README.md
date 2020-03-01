@@ -51,8 +51,9 @@
 ### 博客文章
 | 文章  | 说明  |
 |-------|-------|
+|[android 视频框架](https://github.com/lipangit/JiaoZiVideoPlayer)|Android 视频框架|
 |[android Rxlife](https://github.com/dhhAndroid/RxLifecycle)|Android 轻量级无侵入性的RxJava自动注销库|
-|[android audioplayers](https://github.com/luanpotter/audioplayers)|Android audio icon 开始结束 进行中|
+|[android audioplayers](https://github.com/luanpotter/audioplayers)|Android audio icon 开始结束 进中|
 |[android mmkv](https://github.com/Tencent/MMKV/blob/master/readme_cn.md)|Android mmap 的高性能通用 key-value 组件|
 |[android Bamboy120315](https://github.com/Bamboy120315)|Android 各种Demo合集 仿京东淘宝的物流信息卡片，三种切换效果，三种出场动画，ViewPager+Fragment，一起玩转ViewPager各种特效|
 |[android PlusMenu](https://github.com/DuShuYuan/PlusMenu)|仿微博、酷安点击加号揭露动画弹出菜单+背景模糊效果|
