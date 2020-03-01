@@ -56,6 +56,7 @@
 ### 博客文章
 | 文章  | 说明  |
 |-------|-------|
+|[android BaseRecyclerViewAdapterHelper](https://github.com/CymChad/BaseRecyclerViewAdapterHelper)|Android 基类BaseRecyclerViewAdapterHelper|
 |[android android-gif-drawable](https://github.com/koral--/android-gif-drawable)|Android 加载gif动画|
 |[android Eyepetizer-in-Kotlin](https://github.com/LRH1993/Eyepetizer-in-Kotlin)|Android 使用Kotlin撸一款Eyepetizer，学习Kotlin语言|
 |[android TriangleLabelView](https://github.com/shts/TriangleLabelView)|Android 图片上下左右 三角形标记|
