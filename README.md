@@ -52,6 +52,7 @@
 ### 博客文章
 | 文章  | 说明  |
 |-------|-------|
+|[android AndPermission](https://github.com/yanzhenjie/AndPermission)|Android 权限管理|
 |[android cheesesquare](https://github.com/chrisbanes/cheesesquare)|Android 控件 NavigationView ActionBar|
 |[android android-snowfall](https://github.com/JetradarMobile/android-snowfall)|Android 下雪控件|
 |[android SlideBack](https://github.com/ChenTianSaber/SlideBack)|Android 一个可以让你页面支持 滑动返回 的小东西|
