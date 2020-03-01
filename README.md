@@ -53,7 +53,8 @@
 ### 博客文章
 | 文章  | 说明  |
 |-------|-------|
-|基于百度OCRApi的图片文字识别demo https://www.jianshu.com/p/0ed2c5656035|
+|[android 人脸识别](https://github.com/reggie1996)|Android 人脸识别|
+|[android 基于百度OCRApi的图片文字识别demo](https://www.jianshu.com/p/0ed2c5656035)|Android 基于百度OCRApi的图片文字识别demo|
 |[android CircularFloatingActionMenu](https://github.com/oguzbilgener/CircularFloatingActionMenu)|圆形floating 菜单展示|
 |[android bingoogolapple](https://github.com/bingoogolapple)|Android popwindow 下拉刷新 引导界面滑动导航 二维码 徽章控件|
 |[android AndPermission](https://github.com/yanzhenjie/AndPermission)|Android 权限管理|
