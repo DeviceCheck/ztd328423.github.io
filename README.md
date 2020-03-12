@@ -27,6 +27,7 @@
 ### 企业
 | 类库 |  类库说明  |
 |-------|------|
+|[android 3D model](https://github.com/andresoviedo/android-3D-model-viewer?utm_source=androidweekly.io&utm_medium=website)|3D模型|
 |[android square](https://github.com/square)|square|
 |[Android Kotlin](https://github.com/Kotlin)|Kotlin|
 |[android 七牛云音视频客户端团队](https://github.com/pili-engineering)|七牛云音视频客户端团队|
